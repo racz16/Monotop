@@ -1,0 +1,5 @@
+{
+    "stylelint.reportDescriptionlessDisables": true,
+    "stylelint.reportInvalidScopeDisables": true,
+    "stylelint.reportNeedlessDisables": true
+}

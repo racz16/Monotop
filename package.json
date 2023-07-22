@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "htmlhint": "htmlhint **/*.html"
+    "htmlhint": "htmlhint **/*.html",
+    "stylelint": "stylelint **/*.scss"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +36,9 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^10.0.0",
     "typescript": "~5.1.3"
   }
 }
