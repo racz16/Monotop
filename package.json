@@ -1,5 +1,12 @@
 {
     "name": "monotop",
+    "description": "The official website of Monotop kft.",
+    "homepage": "https://github.com/racz16/Monotop",
+    "author": {
+        "name": "Zalán Rácz",
+        "email": "zalan.racz.dev@gmail.com",
+        "url": "https://github.com/racz16"
+    },
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
