@@ -5,6 +5,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { AppComponent } from './app.component';
             registrationStrategy: 'registerWhenStable:30000',
         }),
         NgbModule,
+        SharedModule,
     ],
     providers: [],
     bootstrap: [AppComponent],
