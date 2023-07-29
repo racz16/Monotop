@@ -11,7 +11,7 @@
     "start_url": "./",
     "icons": [
         {
-            "src": "/assets/monotop_logo.svg",
+            "src": "assets/monotop_logo.svg",
             "sizes": "any"
         }
     ]
