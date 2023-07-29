@@ -17,4 +17,12 @@ describe('AppComponent', () => {
         const app = fixture.componentInstance;
         expect(app).toBeTruthy();
     });
+
+    it('should display the navbar and the footer', () => {
+        const fixture = TestBed.createComponent(AppComponent);
+        const navbar: HTMLElement = fixture.nativeElement.querySelector('nav');
+        const footer: HTMLElement = fixture.nativeElement.querySelector('footer');
+        expect(navbar).toBeTruthy();
+        expect(footer).toBeTruthy();
+    });
 });
