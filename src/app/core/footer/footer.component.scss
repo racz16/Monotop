@@ -1,0 +1,92 @@
+@import 'colors';
+@import 'bootstrap-configuration';
+@import '../../../../node_modules/bootstrap/scss/mixins/breakpoints';
+
+.footer-extended {
+    background-color: $monotop-blue;
+
+    .container {
+        padding: 15px 20px 10px 20px;
+        font-weight: 500;
+
+        .footer-monotop {
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        address div {
+            margin-top: 8px;
+            font-size: 16px;
+
+            a {
+                font-size: 16px;
+                font-weight: 500;
+
+                &:hover {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        iframe {
+            height: 250px;
+            margin-top: 16px;
+        }
+    }
+}
+
+.footer-basic {
+    background-color: $monotop-dark-blue;
+
+    .container {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .footer-extended .container {
+        .footer-monotop {
+            margin-bottom: 48px;
+        }
+
+        address div {
+            margin-top: 16px;
+        }
+
+        iframe {
+            margin-top: 0;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .footer-basic .container {
+        padding: 16px 40px;
+    }
+
+    .footer-extended .container {
+        padding: 30px 40px 20px 40px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .footer-basic .container {
+        padding: 32px 80px;
+    }
+
+    .footer-extended .container {
+        padding: 60px 80px 40px 80px;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .footer-basic .container {
+        padding: 32px 160px;
+    }
+
+    .footer-extended .container {
+        padding: 120px 160px 80px 160px;
+    }
+}
