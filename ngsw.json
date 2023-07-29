@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1690021735750,
+  "timestamp": 1690642105477,
   "index": "/Monotop/index.html",
   "assetGroups": [
     {
@@ -11,13 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/Monotop/favicon.ico",
         "/Monotop/index.html",
-        "/Monotop/main.a8dd833eca72a4bf.js",
+        "/Monotop/main.e0830f68e3015dee.js",
         "/Monotop/manifest.webmanifest",
         "/Monotop/polyfills.56233e4eeb75a32d.js",
         "/Monotop/runtime.35494deeadb9e5c7.js",
-        "/Monotop/styles.5bf5aea1214ddd3b.css"
+        "/Monotop/styles.a4c8fc320af94f16.css"
       ],
       "patterns": []
     },
@@ -29,35 +28,24 @@
         "ignoreVary": true
       },
       "urls": [
-        "/Monotop/assets/icons/icon-128x128.png",
-        "/Monotop/assets/icons/icon-144x144.png",
-        "/Monotop/assets/icons/icon-152x152.png",
-        "/Monotop/assets/icons/icon-192x192.png",
-        "/Monotop/assets/icons/icon-384x384.png",
-        "/Monotop/assets/icons/icon-512x512.png",
-        "/Monotop/assets/icons/icon-72x72.png",
-        "/Monotop/assets/icons/icon-96x96.png"
+        "/Monotop/assets/link-button-icons/arrow-right.svg",
+        "/Monotop/assets/link-button-icons/envelope.svg",
+        "/Monotop/assets/monotop_logo.svg"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/Monotop/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
-    "/Monotop/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
-    "/Monotop/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
-    "/Monotop/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
-    "/Monotop/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/Monotop/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/Monotop/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
-    "/Monotop/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
-    "/Monotop/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/Monotop/index.html": "cb7b828a32edbd4dba7d79c0674fca83fa8323eb",
-    "/Monotop/main.a8dd833eca72a4bf.js": "c811e39f26791e9b0fb67767156a9301555cb11a",
-    "/Monotop/manifest.webmanifest": "4c5febbd4022924fca9984a918e3e6f37492167e",
+    "/Monotop/assets/link-button-icons/arrow-right.svg": "af470bf999977a5c4088da5c380a4ad949274dc1",
+    "/Monotop/assets/link-button-icons/envelope.svg": "053454379feb917705e67bca4e5041293c156283",
+    "/Monotop/assets/monotop_logo.svg": "3734d8fd3817b506635eb5f65e4a5d18c5b5ac14",
+    "/Monotop/index.html": "f711364ffaf5d28fb3abd27205fc8edfd02a710f",
+    "/Monotop/main.e0830f68e3015dee.js": "83bd6bcab99551dd00914e8bf178064430750706",
+    "/Monotop/manifest.webmanifest": "fbe08375416f4a9f2c8ba3eccb9a89d761dd0025",
     "/Monotop/polyfills.56233e4eeb75a32d.js": "847cf4d57c65c573daaf596891d3ded06219296b",
     "/Monotop/runtime.35494deeadb9e5c7.js": "a2364d7cbd3e576798949c1074b9bb253f3c902c",
-    "/Monotop/styles.5bf5aea1214ddd3b.css": "2cdaf819c4a063b247c2adf803dded97514e9bcd"
+    "/Monotop/styles.a4c8fc320af94f16.css": "ce91743117a453db1b6f1dcdcbd81e3aa7693c58"
   },
   "navigationUrls": [
     {
