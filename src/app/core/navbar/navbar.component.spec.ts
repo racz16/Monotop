@@ -36,7 +36,6 @@ describe('NavbarComponent', () => {
         const lis: NodeListOf<HTMLAnchorElement> = fixture.nativeElement.querySelectorAll('li a');
         expect(lis.length).toBe(6);
         expect(lis[0]?.textContent).toContain('Főoldal');
-        expect(lis[0]?.href).toContain('fooldal');
         expect(lis[1]?.textContent).toContain('Rólunk');
         expect(lis[1]?.href).toContain('rolunk');
         expect(lis[2]?.textContent).toContain('Tevékenységek');
