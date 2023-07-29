@@ -5,6 +5,11 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 const routes: Routes = [
     {
         path: '',
+        pathMatch: 'full',
+        redirectTo: 'fooldal',
+    },
+    {
+        path: 'fooldal',
         component: MainPageComponent,
     },
 ];

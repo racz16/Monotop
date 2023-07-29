@@ -1,0 +1,78 @@
+@import 'styles';
+
+nav {
+    background-color: $monotop-blue;
+
+    .container {
+        img {
+            margin-right: 16px;
+        }
+
+        span {
+            font-size: 21px;
+        }
+
+        button {
+            margin-inline-start: 16px;
+        }
+
+        li {
+            list-style-type: none;
+            margin-inline-start: 64px;
+
+            a {
+                color: white;
+
+                &.active-menu-item {
+                    color: $neon-green;
+                }
+
+                &:hover {
+                    color: color-mix(in srgb, $neon-green 50%, white);
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    nav.navbar {
+        padding: 20px 0 16px 0;
+
+        .container {
+            padding: 0 30px;
+
+            img {
+                margin-right: 32px;
+            }
+
+            li {
+                margin-inline-start: 16px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    nav.navbar {
+        padding: 52px 0 32px 0;
+
+        .container {
+            padding: 0 60px;
+
+            li {
+                margin-inline-start: 32px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    nav .container {
+        padding: 0 120px;
+
+        li {
+            margin-inline-start: 64px;
+        }
+    }
+}
