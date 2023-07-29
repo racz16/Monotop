@@ -1,26 +1,4 @@
-$spacer: 16px;
-$grid-breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1440px,
-);
-$container-max-widths: (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px,
-    xxl: 1440px,
-);
-
-@import 'bootstrap/scss/bootstrap';
-
-$monotop-green: #72cb76;
-$neon-green: #62e067;
-$monotop-blue: #01325b;
-$gray: #555f67;
+@import 'bootstrap-loading';
 
 * {
     font-family: 'Work Sans', sans-serif;

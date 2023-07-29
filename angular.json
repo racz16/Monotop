@@ -30,7 +30,7 @@
                         "serviceWorker": true,
                         "ngswConfigPath": "ngsw-config.json",
                         "stylePreprocessorOptions": {
-                            "includePaths": ["src"]
+                            "includePaths": ["src/styles"]
                         }
                     },
                     "configurations": {
@@ -47,7 +47,12 @@
                                     "maximumError": "4kb"
                                 }
                             ],
-                            "outputHashing": "all"
+                            "outputHashing": "all",
+                            "optimization": {
+                                "styles": {
+                                    "inlineCritical": false
+                                }
+                            }
                         },
                         "development": {
                             "buildOptimizer": false,
@@ -88,7 +93,7 @@
                         "styles": ["src/styles.scss"],
                         "scripts": [],
                         "stylePreprocessorOptions": {
-                            "includePaths": ["src"]
+                            "includePaths": ["src/styles"]
                         }
                     }
                 },

@@ -1,4 +1,6 @@
-@import 'styles';
+@import 'colors';
+@import 'bootstrap-configuration';
+@import '../../../../node_modules/bootstrap/scss/mixins/breakpoints';
 
 nav {
     background-color: $monotop-blue;
@@ -68,7 +70,7 @@ nav {
 }
 
 @include media-breakpoint-up(xxl) {
-    nav .container {
+    nav.navbar .container {
         padding: 0 120px;
 
         li {

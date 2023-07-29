@@ -4,6 +4,6 @@
 <ng-template #buttonContent>
     <div class="d-flex align-items-center">
         <ng-content></ng-content>
-        <img *ngIf="svgIcon" class="ms-3" [src]="iconSrc" [attr.alt]="svgIconAlt" />
+        <img *ngIf="svgIcon" [src]="iconSrc" [attr.alt]="svgIconAlt" />
     </div>
 </ng-template>
