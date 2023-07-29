@@ -13,6 +13,6 @@ export class LinkButtonComponent {
     @Input() svgIconAlt?: string;
 
     get iconSrc(): string {
-        return `/assets/link-button-icons/${this.svgIcon}.svg`;
+        return `assets/link-button-icons/${this.svgIcon}.svg`;
     }
 }
