@@ -12,7 +12,7 @@ export class NavbarComponent {
     menuItems: MenuItem[] = [
         {
             name: 'Főoldal',
-            path: 'fooldal',
+            path: '',
         },
         {
             name: 'Rólunk',

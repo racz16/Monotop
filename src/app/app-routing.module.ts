@@ -6,11 +6,11 @@ const routes: Routes = [
     {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'fooldal',
+        component: MainPageComponent,
     },
     {
-        path: 'fooldal',
-        component: MainPageComponent,
+        path: '**',
+        redirectTo: '',
     },
 ];
 

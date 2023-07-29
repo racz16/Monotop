@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark navbar-expand-lg sticky-top">
     <div class="container d-flex align-items-center">
-        <a class="d-flex align-items-center text-decoration-none" routerLink="fooldal">
+        <a class="d-flex align-items-center text-decoration-none" routerLink="">
             <img src="assets/monotop_logo.svg" alt="Monotop Kft. logó" />
             <span class="text-white">MONOTOP Kft.</span>
         </a>
@@ -12,6 +12,7 @@
                         class="text-decoration-none"
                         [routerLink]="menuItem.path"
                         routerLinkActive="active-menu-item"
+                        [routerLinkActiveOptions]="{ exact: true }"
                         (click)="isMenuCollapsed = true"
                     >
                         {{ menuItem.name }}
