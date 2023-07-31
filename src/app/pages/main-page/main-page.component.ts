@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Rectangle } from 'src/app/shared/interfaces/rectangle';
 
 @Component({
     selector: 'app-main-page',
@@ -6,4 +7,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     styleUrls: ['./main-page.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MainPageComponent {}
+export class MainPageComponent {
+    rectangle: Rectangle[] = [{ x: 0, y: 0, width: 12, height: 6 }];
+}
