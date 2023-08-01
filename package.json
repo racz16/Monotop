@@ -1,6 +1,6 @@
 {
     "name": "monotop",
-    "description": "The official website of Monotop kft.",
+    "description": "The official website of Monotop Kft.",
     "homepage": "https://github.com/racz16/Monotop",
     "author": {
         "name": "Zalán Rácz",
@@ -15,7 +15,6 @@
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
         "test-headless": "ng test --no-watch --no-progress --browsers=ChromeHeadless",
-        "htmlhint": "htmlhint **/*.html",
         "stylelint": "stylelint **/*.scss",
         "prettier-lint": "prettier --check .",
         "prettier-format": "prettier --write .",
@@ -55,7 +54,6 @@
         "@typescript-eslint/parser": "5.62.0",
         "angular-cli-ghpages": "^1.0.6",
         "eslint": "^8.44.0",
-        "htmlhint": "^1.1.4",
         "husky": "^8.0.0",
         "jasmine-core": "~4.6.0",
         "karma": "~6.4.0",

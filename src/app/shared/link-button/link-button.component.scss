@@ -1,0 +1,25 @@
+@import 'colors';
+
+a {
+    display: inline-block;
+    background-color: $monotop-green;
+    padding: 20px 24px;
+    text-decoration: none;
+
+    .content {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    img {
+        margin-inline-start: 16px;
+    }
+
+    &:hover {
+        background-color: color-mix(in srgb, $monotop-green 90%, black);
+    }
+
+    &:active {
+        background-color: color-mix(in srgb, $monotop-green 80%, black);
+    }
+}

@@ -2,9 +2,10 @@ import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -17,7 +18,8 @@ import { AppComponent } from './app.component';
             // or after 30 seconds (whichever comes first).
             registrationStrategy: 'registerWhenStable:30000',
         }),
-        NgbModule,
+        CoreModule,
+        PagesModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

@@ -1,1 +1,103 @@
-@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-loading';
+@import 'colors';
+
+* {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 8vw;
+    color: $monotop-blue;
+    font-weight: 300;
+    line-height: 110%;
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+h3 {
+    font-size: 7vw;
+    color: $monotop-blue;
+    font-weight: 300;
+    line-height: 110%;
+}
+
+a {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container-small {
+    padding: 8px 20px;
+}
+
+.container-big {
+    padding: 4px 10px;
+}
+
+@include media-breakpoint-up(sm) {
+    h1 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 50px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .container-small {
+        padding: 0 40px;
+    }
+
+    .container-big {
+        padding: 0 30px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    h1 {
+        font-size: 70px;
+    }
+
+    .container-small {
+        padding-inline: 80px;
+    }
+
+    .container-big {
+        padding-inline: 60px;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    h1 {
+        font-size: 90px;
+    }
+
+    h3 {
+        font-size: 64px;
+    }
+
+    .container-small {
+        padding-inline: 160px;
+    }
+
+    .container-big {
+        padding-inline: 120px;
+    }
+}

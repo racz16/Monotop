@@ -1,0 +1,96 @@
+@import 'colors';
+@import 'bootstrap-configuration';
+@import '../../../../node_modules/bootstrap/scss/mixins/breakpoints';
+
+.footer-extended {
+    background-color: $monotop-blue;
+
+    .container {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        font-weight: 500;
+
+        .footer-monotop {
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        address div {
+            margin-top: 8px;
+            font-size: 16px;
+
+            a {
+                font-size: 16px;
+                font-weight: 500;
+
+                &:hover {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        iframe {
+            height: 300px;
+            margin-top: 16px;
+        }
+    }
+}
+
+.footer-basic {
+    background-color: $monotop-dark-blue;
+
+    .container {
+        font-size: 16px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .footer-extended .container {
+        .footer-monotop {
+            margin-bottom: 28px;
+        }
+
+        address div {
+            margin-top: 16px;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .footer-basic .container {
+        padding-block: 16px;
+    }
+
+    .footer-extended .container {
+        padding-top: 30px;
+        padding-bottom: 20px;
+
+        iframe {
+            height: 100%;
+            margin-top: 0;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .footer-basic .container {
+        padding-block: 32px;
+    }
+
+    .footer-extended .container {
+        padding-top: 60px;
+        padding-bottom: 40px;
+
+        .footer-monotop {
+            margin-bottom: 48px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .footer-extended .container {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+}

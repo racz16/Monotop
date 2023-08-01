@@ -1,0 +1,24 @@
+<nav class="navbar navbar-dark navbar-expand-lg sticky-top">
+    <div class="container container-big d-flex align-items-center">
+        <a class="d-flex align-items-center text-decoration-none" routerLink="">
+            <img src="assets/monotop_logo.svg" width="48" height="36" alt="Monotop Kft. logó" />
+            <span class="text-white">MONOTOP Kft.</span>
+        </a>
+        <button class="navbar-toggler" (click)="isMenuCollapsed = !isMenuCollapsed">☰</button>
+        <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+            <ul class="d-flex justify-content-end flex-column flex-lg-row w-100 p-0 m-0">
+                <li *ngFor="let menuItem of menuItems">
+                    <a
+                        class="text-decoration-none"
+                        [routerLink]="menuItem.path"
+                        routerLinkActive="active-menu-item"
+                        [routerLinkActiveOptions]="{ exact: true }"
+                        (click)="isMenuCollapsed = true"
+                    >
+                        {{ menuItem.name }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

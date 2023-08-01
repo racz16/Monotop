@@ -1,0 +1,66 @@
+@import 'colors';
+@import 'bootstrap-configuration';
+@import '../../../../node_modules/bootstrap/scss/mixins/breakpoints';
+
+nav {
+    background-color: $monotop-blue;
+
+    img {
+        margin-inline-end: 16px;
+    }
+
+    span {
+        font-size: 21px;
+    }
+
+    button {
+        margin-inline-start: 16px;
+    }
+
+    li {
+        list-style-type: none;
+        margin-inline-start: 64px;
+
+        a {
+            color: white;
+
+            &:hover {
+                color: color-mix(in srgb, $neon-green 50%, white);
+            }
+
+            &.active-menu-item {
+                color: $neon-green;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    nav {
+        padding: 20px 0 16px 0;
+
+        img {
+            margin-inline-end: 32px;
+        }
+
+        li {
+            margin-inline-start: 16px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    nav {
+        padding: 52px 0 32px 0;
+
+        li {
+            margin-inline-start: 32px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    nav li {
+        margin-inline-start: 64px;
+    }
+}

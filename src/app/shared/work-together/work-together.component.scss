@@ -1,0 +1,52 @@
+@import 'colors';
+@import 'bootstrap-configuration';
+@import '../../../../node_modules/bootstrap/scss/mixins/breakpoints';
+
+.container {
+    margin-block: 15px;
+
+    .work-together-text {
+        color: $monotop-dark-blue;
+        margin-top: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .container {
+        margin-block: 60px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .container {
+        margin-block: 120px;
+
+        .work-together-text {
+            margin-top: 32px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .container {
+        margin-block: 180px;
+
+        .work-together-text {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .container {
+        margin-block: 240px;
+
+        .work-together-text {
+            margin-top: 64px;
+            margin-bottom: 40px;
+        }
+    }
+}

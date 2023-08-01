@@ -20,7 +20,5 @@ jobs:
               run: npm run prettier-lint
             - name: Stylelint
               run: npm run stylelint
-            - name: HTMLHint
-              run: npm run htmlhint
             - name: Run tests
               run: npm run test-headless
