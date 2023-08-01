@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1690829804020,
+  "timestamp": 1690848388528,
   "index": "/Monotop/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/Monotop/assets/monotop_logo.svg",
         "/Monotop/index.html",
-        "/Monotop/main.e7094e01714d78fa.js",
+        "/Monotop/main.5a1316e954577b91.js",
         "/Monotop/manifest.webmanifest",
         "/Monotop/polyfills.56233e4eeb75a32d.js",
         "/Monotop/runtime.35494deeadb9e5c7.js",
-        "/Monotop/styles.d33d1b02c0650aba.css"
+        "/Monotop/styles.d719b010024c36f1.css"
       ],
       "patterns": []
     },
@@ -46,12 +46,12 @@
     "/Monotop/assets/main-page/main-1.jpg": "9ad330a4411d3237b26d62e4510fb17ce1632070",
     "/Monotop/assets/main-page/main-2.jpg": "b4c19d07a4522b794d631164831eb307af8bfb9c",
     "/Monotop/assets/monotop_logo.svg": "3734d8fd3817b506635eb5f65e4a5d18c5b5ac14",
-    "/Monotop/index.html": "a59a39e90eb400e6d321c0a3feb42b9c119a5131",
-    "/Monotop/main.e7094e01714d78fa.js": "20a65c9c1264dc318c5eb99bdd8964509b0e2efd",
+    "/Monotop/index.html": "590e2fd04c48bce11a3de146ea1a4df28dd002f5",
+    "/Monotop/main.5a1316e954577b91.js": "1021eef4217a58c747e73f5b4bfd0df7d0c87977",
     "/Monotop/manifest.webmanifest": "a2ee0893cc1ab1a6d7226cf0c4e37a3fc27e5b7b",
     "/Monotop/polyfills.56233e4eeb75a32d.js": "847cf4d57c65c573daaf596891d3ded06219296b",
     "/Monotop/runtime.35494deeadb9e5c7.js": "a2364d7cbd3e576798949c1074b9bb253f3c902c",
-    "/Monotop/styles.d33d1b02c0650aba.css": "6572c66afc546d02229078e587d5279f60663cd0"
+    "/Monotop/styles.d719b010024c36f1.css": "da246f6d9d7e7bd36000a7019d7b958bd93053f1"
   },
   "navigationUrls": [
     {
