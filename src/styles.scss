@@ -7,8 +7,12 @@
     font-weight: 500;
 }
 
+.app-root {
+    min-height: 100vh;
+}
+
 h1 {
-    font-size: 8vw;
+    font-size: 45px;
     color: $monotop-blue;
     font-weight: 300;
     line-height: 110%;
@@ -21,7 +25,7 @@ h2 {
 }
 
 h3 {
-    font-size: 7vw;
+    font-size: 40px;
     color: $monotop-blue;
     font-weight: 300;
     line-height: 110%;
@@ -40,14 +44,10 @@ a {
     padding: 4px 10px;
 }
 
-@include media-breakpoint-up(sm) {
-    h1 {
-        font-size: 45px;
-    }
-
-    h3 {
-        font-size: 40px;
-    }
+.green-monotop {
+    color: $monotop-green;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 @include media-breakpoint-up(md) {
@@ -81,6 +81,10 @@ a {
 
     .container-big {
         padding-inline: 60px;
+    }
+
+    .green-monotop {
+        font-size: 32px;
     }
 }
 

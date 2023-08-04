@@ -6,12 +6,6 @@ h1 {
     margin-bottom: 25px;
 }
 
-.green-monotop {
-    color: $monotop-green;
-    font-size: 5vw;
-    font-weight: 600;
-}
-
 .award-card {
     background-color: $monotop-green;
     padding: 24px 32px;
@@ -71,7 +65,6 @@ h1 {
 
 @include media-breakpoint-up(sm) {
     .green-monotop {
-        font-size: 24px;
         margin-top: 50px;
     }
 
@@ -153,7 +146,6 @@ h1 {
     }
 
     .green-monotop {
-        font-size: 32px;
         margin-top: 140px;
     }
 
