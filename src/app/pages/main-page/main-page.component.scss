@@ -2,18 +2,16 @@
 @import 'bootstrap-configuration';
 @import '../../../../node_modules/bootstrap/scss/mixins/breakpoints';
 
-h1 {
-    margin-bottom: 25px;
+.floor {
+    margin-bottom: 24px;
 }
 
 .award-card {
     background-color: $monotop-green;
     padding: 24px 32px;
-    margin-bottom: 30px;
     font-size: 16px;
 
     .award-title {
-        margin-block: 24px;
         font-size: 16px;
         font-weight: 700;
     }
@@ -25,7 +23,7 @@ h1 {
 }
 
 .image-container {
-    margin-block: 30px;
+    margin-block: 32px;
 
     .dots-1 {
         left: 15%;
@@ -33,26 +31,18 @@ h1 {
     }
 }
 
-.years-title {
-    margin-bottom: 20px;
-}
-
 .years-text {
     color: $monotop-dark-blue;
-}
-
-.image-container-2 {
-    margin: 32px 0;
 }
 
 .green-card {
     background-color: $light-green;
     width: 100%;
     padding: 32px 20px;
+    margin-top: 32px;
 
     .green-card-title {
         color: $neon-green;
-        margin-bottom: 12px;
         font-size: 40px;
         font-weight: 400;
         line-height: 110%;
@@ -64,13 +54,16 @@ h1 {
 }
 
 @include media-breakpoint-up(sm) {
-    .green-monotop {
-        margin-top: 50px;
+    .floor {
+        margin-bottom: 32px;
     }
 
     .image-container {
-        margin-top: 50px;
-        margin-bottom: 140px;
+        margin-bottom: 0;
+    }
+
+    .green-card {
+        margin-top: 40px;
     }
 
     .award-card {
@@ -78,54 +71,56 @@ h1 {
         top: -35px;
         padding: 12px 16px;
         right: 50px;
-
-        .award-title {
-            margin-block: 12px;
-        }
     }
 }
 
 @include media-breakpoint-up(md) {
-    .green-card .green-card-title {
-        font-size: 50px;
+    .floor {
+        margin-bottom: 32px;
+    }
+
+    .image-container {
+        margin-top: 40px;
+    }
+
+    .green-card {
+        margin-top: 48px;
+
+        .green-card-title {
+            font-size: 50px;
+        }
     }
 }
 
 @include media-breakpoint-up(lg) {
-    h1 {
-        margin-bottom: 50px;
+    .floor {
+        margin-bottom: 52px;
     }
 
-    .image-container,
-    .green-monotop {
-        margin-top: 115px;
+    .image-container {
+        margin-top: 0;
     }
 
     .award-card {
-        top: 35px;
+        top: -50px;
     }
 
     .years-title {
         width: 425px;
-        margin-bottom: 20px;
     }
 
     .years-text {
         width: 375px;
     }
 
-    .image-container-2 {
-        margin-bottom: 0;
+    .image-2 {
+        width: 75%;
+    }
 
-        .image-2 {
-            width: 75%;
-        }
-
-        .dots-2 {
-            right: 11.5%;
-            top: 13%;
-            z-index: 10;
-        }
+    .dots-2 {
+        right: 11.5%;
+        top: 16%;
+        z-index: 10;
     }
 
     .green-card {
@@ -133,6 +128,7 @@ h1 {
         width: auto;
         top: 20%;
         right: 0;
+        margin-top: 0;
 
         .green-card-text {
             width: 325px;
@@ -141,39 +137,19 @@ h1 {
 }
 
 @include media-breakpoint-up(xl) {
-    h1 {
-        margin-bottom: 60px;
-    }
-
-    .green-monotop {
-        margin-top: 140px;
-    }
-
-    .image-container {
-        margin-top: 140px;
-        margin-bottom: 225px;
+    .floor {
+        margin-bottom: 59px;
     }
 
     .award-card {
         padding: 24px 32px;
-
-        .award-title {
-            margin-block: 24px;
-        }
+        top: -100px;
     }
 
-    .years-title {
-        margin-bottom: 40px;
-    }
-
-    .image-container-2 {
-        margin-top: 64px;
-
-        .dots-2 {
-            right: 15%;
-            top: 26%;
-            z-index: 10;
-        }
+    .dots-2 {
+        right: 15%;
+        top: 25%;
+        z-index: 10;
     }
 
     .green-card {
@@ -182,7 +158,6 @@ h1 {
 
         .green-card-title {
             font-size: 64px;
-            margin-bottom: 48px;
         }
 
         .green-card-text {
@@ -193,11 +168,11 @@ h1 {
 }
 
 @include media-breakpoint-up(xxl) {
-    h1 {
-        margin-bottom: 75px;
+    .floor {
+        margin-bottom: 76px;
     }
 
-    .image-container-2 .dots-2 {
+    .dots-2 {
         right: 16.5%;
         top: 22%;
     }
