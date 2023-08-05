@@ -1,5 +1,6 @@
 @import 'bootstrap-loading';
 @import 'colors';
+@import 'margins';
 
 * {
     font-family: 'Work Sans', sans-serif;
@@ -19,13 +20,14 @@ h1 {
 }
 
 h2 {
-    font-size: 80px;
+    font-size: 40px;
+    color: $monotop-blue;
     font-weight: 400;
     line-height: 110%;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 35px;
     color: $monotop-blue;
     font-weight: 300;
     line-height: 110%;
@@ -37,11 +39,11 @@ a {
 }
 
 .container-small {
-    padding: 8px 20px;
+    padding: 0 20px;
 }
 
 .container-big {
-    padding: 4px 10px;
+    padding: 0 10px;
 }
 
 .green-monotop {
@@ -55,24 +57,36 @@ a {
         font-size: 60px;
     }
 
+    h2 {
+        font-size: 55px;
+    }
+
     h3 {
         font-size: 50px;
     }
 }
 
 @include media-breakpoint-up(lg) {
+    h2 {
+        color: white;
+    }
+
     .container-small {
-        padding: 0 40px;
+        padding-inline: 40px;
     }
 
     .container-big {
-        padding: 0 30px;
+        padding-inline: 30px;
     }
 }
 
 @include media-breakpoint-up(xl) {
     h1 {
         font-size: 70px;
+    }
+
+    h2 {
+        font-size: 65px;
     }
 
     .container-small {
@@ -91,6 +105,10 @@ a {
 @include media-breakpoint-up(xxl) {
     h1 {
         font-size: 90px;
+    }
+
+    h2 {
+        font-size: 80px;
     }
 
     h3 {

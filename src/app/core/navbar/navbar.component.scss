@@ -4,6 +4,8 @@
 
 nav {
     background-color: $monotop-blue;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid $monotop-dark-blue;
 
     img {
         margin-inline-end: 16px;
@@ -37,7 +39,7 @@ nav {
 
 @include media-breakpoint-up(lg) {
     nav {
-        padding: 20px 0 16px 0;
+        padding: 24px 0 16px 0;
 
         img {
             margin-inline-end: 32px;
@@ -51,7 +53,7 @@ nav {
 
 @include media-breakpoint-up(xl) {
     nav {
-        padding: 52px 0 32px 0;
+        padding: 48px 0 32px 0;
 
         li {
             margin-inline-start: 32px;

@@ -3,16 +3,6 @@
 @import '../../../../node_modules/bootstrap/scss/mixins/breakpoints';
 
 section {
-    margin-bottom: 30px;
-
-    h1 {
-        margin-block: 10px;
-    }
-
-    .green-monotop {
-        margin-bottom: 12px;
-    }
-
     address {
         color: $monotop-dark-blue;
         gap: 8px;
@@ -25,14 +15,11 @@ section {
     .people-title {
         color: $monotop-green;
         font-size: 24px;
-        margin-top: 20px;
-        margin-bottom: 10px;
     }
 
     .people-text {
         color: $monotop-dark-blue;
         gap: 8px;
-        margin-bottom: 20px;
 
         .person-title {
             font-weight: 600;
@@ -55,85 +42,28 @@ section {
 
     iframe {
         height: 350px;
+        margin-top: 24px;
     }
 }
 
 @include media-breakpoint-up(sm) {
     section {
-        margin-bottom: 60px;
-
-        h1 {
-            margin-block: 20px;
-        }
-
         address,
         .people-text {
             gap: 16px;
         }
 
-        .green-monotop {
-            margin-bottom: 24px;
-        }
-
-        .people-title {
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-
-        .people-text {
-            margin-bottom: 40px;
+        iframe {
+            margin-top: 32px;
         }
     }
 }
 
 @include media-breakpoint-up(lg) {
     section {
-        margin-bottom: 60px;
-
-        h1 {
-            margin-block: 40px;
-        }
-
-        .people-text {
-            margin-bottom: 0;
-        }
-
         iframe {
             height: 100%;
-        }
-    }
-}
-
-@include media-breakpoint-up(xl) {
-    section {
-        margin-bottom: 120px;
-
-        h1 {
-            margin-block: 80px;
-        }
-
-        .green-monotop {
-            margin-bottom: 48px;
-        }
-
-        .people-title {
-            margin-top: 80px;
-            margin-bottom: 40px;
-        }
-    }
-}
-
-@include media-breakpoint-up(xxl) {
-    section {
-        margin-bottom: 240px;
-
-        h1 {
-            margin-block: 150px;
-        }
-
-        .people-title {
-            margin-top: 125px;
-            margin-bottom: 48px;
+            margin-top: 0;
         }
     }
 }

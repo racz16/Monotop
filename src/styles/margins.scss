@@ -1,0 +1,174 @@
+@import 'bootstrap-configuration';
+@import '../../node_modules/bootstrap/scss/mixins/breakpoints';
+
+@mixin m-240($size: 240px) {
+    .mt-240 {
+        margin-top: $size;
+    }
+
+    .mb-240 {
+        margin-bottom: $size;
+    }
+}
+
+@mixin m-180($size: 180px) {
+    .mt-180 {
+        margin-top: $size;
+    }
+
+    .mb-180 {
+        margin-bottom: $size;
+    }
+}
+
+@mixin m-152($size: 152px) {
+    .mt-152 {
+        margin-top: $size;
+    }
+
+    .mb-152 {
+        margin-bottom: $size;
+    }
+}
+
+@mixin m-120($size: 120px) {
+    .mt-120 {
+        margin-top: $size;
+    }
+
+    .mb-120 {
+        margin-bottom: $size;
+    }
+}
+
+@mixin m-80($size: 80px) {
+    .mt-80 {
+        margin-top: $size;
+    }
+
+    .mb-80 {
+        margin-bottom: $size;
+    }
+}
+
+@mixin m-64($size: 64px) {
+    .mt-64 {
+        margin-top: $size;
+    }
+
+    .mb-64 {
+        margin-bottom: $size;
+    }
+}
+
+@mixin m-48($size: 48px) {
+    .mt-48 {
+        margin-top: $size;
+    }
+
+    .mb-48 {
+        margin-bottom: $size;
+    }
+}
+
+@mixin m-40($size: 40px) {
+    .mt-40 {
+        margin-top: $size;
+    }
+
+    .mb-40 {
+        margin-bottom: $size;
+    }
+}
+
+@mixin m-32($size: 32px) {
+    .mt-32 {
+        margin-top: $size;
+    }
+
+    .mb-32 {
+        margin-bottom: $size;
+    }
+}
+
+@mixin m-24($size: 24px) {
+    .mt-24 {
+        margin-top: $size;
+    }
+
+    .mb-24 {
+        margin-bottom: $size;
+    }
+}
+
+@mixin m-16($size: 16px) {
+    .mt-16 {
+        margin-top: $size;
+    }
+
+    .mb-16 {
+        margin-bottom: $size;
+    }
+}
+
+@include m-240(64px);
+@include m-180(48px);
+@include m-152(40px);
+@include m-120(32px);
+@include m-80(32px);
+@include m-64(32px);
+@include m-48(24px);
+@include m-40(24px);
+@include m-32(16px);
+@include m-24(16px);
+@include m-16;
+
+@include media-breakpoint-up(sm) {
+    @include m-240(80px);
+    @include m-180(64px);
+    @include m-152(48px);
+    @include m-120(40px);
+    @include m-48(32px);
+    @include m-32(24px);
+}
+
+@include media-breakpoint-up(md) {
+    @include m-240(120px);
+    @include m-180(80px);
+    @include m-152(64px);
+    @include m-120(48px);
+    @include m-80(40px);
+    @include m-64(40px);
+    @include m-40(32px);
+}
+
+@include media-breakpoint-up(lg) {
+    @include m-240(152px);
+    @include m-180(120px);
+    @include m-152(80px);
+    @include m-120(64px);
+    @include m-80(48px);
+    @include m-48(40px);
+    @include m-32;
+    @include m-24;
+}
+
+@include media-breakpoint-up(xl) {
+    @include m-240(180px);
+    @include m-180(152px);
+    @include m-152(120px);
+    @include m-120(80px);
+    @include m-80(64px);
+    @include m-64(48px);
+    @include m-48;
+    @include m-40;
+}
+
+@include media-breakpoint-up(xxl) {
+    @include m-240;
+    @include m-180;
+    @include m-152;
+    @include m-120;
+    @include m-80;
+    @include m-64;
+}

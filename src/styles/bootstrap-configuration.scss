@@ -1,3 +1,7 @@
+@import 'colors';
+
+// breakpoints
+
 $grid-breakpoints: (
     xs: 0,
     sm: 576px,
@@ -13,3 +17,27 @@ $container-max-widths: (
     xl: 1140px,
     xxl: 1440px,
 );
+
+// tooltips
+
+$tooltip-color: $monotop-blue;
+$tooltip-bg: white;
+$tooltip-border-radius: 4px;
+$tooltip-opacity: 100%;
+$tooltip-padding-y: 12px;
+$tooltip-padding-x: 16px;
+
+.tooltip {
+    /* stylelint-disable-next-line declaration-no-important -- It's !important in Bootstrap, so this is the only way I can override it. */
+    margin-bottom: 16px !important;
+    box-shadow: 0 0 10px 3px rgba(154 154 154 / 25%);
+}
+
+.tooltip-arrow {
+    /* stylelint-disable-next-line declaration-no-important -- It's !important in Bootstrap, so this is the only way I can override it. */
+    display: none !important;
+}
+
+.fade {
+    transition: none;
+}
