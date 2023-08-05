@@ -93,7 +93,7 @@ describe('AboutUsPageComponent', () => {
         const linkComponent = link.componentInstance;
         expect(linkComponent).toBeTruthy();
         expect(linkComponent.svgIcon).toBe('arrow-right');
-        expect(linkComponent.link).toBe('tevekenysegek');
+        expect(linkComponent.link).toBe('/tevekenysegek');
         expect(linkComponent.svgIconAlt).toBe('Jobbra mutató nyíl');
         expect(linkComponent.isExternal).toBe(false);
         expect(link.nativeElement).toBeTruthy();
