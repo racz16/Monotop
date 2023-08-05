@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1691168685181,
+  "timestamp": 1691261405676,
   "index": "/Monotop/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/Monotop/assets/monotop_logo.svg",
         "/Monotop/index.html",
-        "/Monotop/main.c8aea818b0a9ae3d.js",
+        "/Monotop/main.6ddf2dd622e93d6c.js",
         "/Monotop/manifest.webmanifest",
         "/Monotop/polyfills.56233e4eeb75a32d.js",
         "/Monotop/runtime.35494deeadb9e5c7.js",
-        "/Monotop/styles.baabb57572b9c1e8.css"
+        "/Monotop/styles.0b7af6b5010bd64c.css"
       ],
       "patterns": []
     },
@@ -29,6 +29,13 @@
         "ignoreVary": true
       },
       "urls": [
+        "/Monotop/assets/about-us-page/about-us.jpg",
+        "/Monotop/assets/about-us-page/ddc-logo.png",
+        "/Monotop/assets/about-us-page/delta-logo.png",
+        "/Monotop/assets/about-us-page/durostone-logo.png",
+        "/Monotop/assets/about-us-page/grh-logo.svg",
+        "/Monotop/assets/about-us-page/hungary-map.svg",
+        "/Monotop/assets/about-us-page/mmi-atlas-logo.png",
         "/Monotop/assets/link-button-icons/arrow-right.svg",
         "/Monotop/assets/link-button-icons/envelope.svg",
         "/Monotop/assets/main-page/award-logo.png",
@@ -40,18 +47,25 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "/Monotop/assets/about-us-page/about-us.jpg": "2a4564f3a4025d13c887afe5ed180b3735f518d7",
+    "/Monotop/assets/about-us-page/ddc-logo.png": "427825a433cc455f3abf38277f135852f0df36bf",
+    "/Monotop/assets/about-us-page/delta-logo.png": "b593084c16d77448215477b694ec1ba8ea2e000c",
+    "/Monotop/assets/about-us-page/durostone-logo.png": "f952ae4c2b35cb1240a24d52732f76cb7116056e",
+    "/Monotop/assets/about-us-page/grh-logo.svg": "4cc7cf8179d100bb8b071c6c009b886d17e079b4",
+    "/Monotop/assets/about-us-page/hungary-map.svg": "ae0f6350a8d18aecd34e6cb3e027bcf280dd7942",
+    "/Monotop/assets/about-us-page/mmi-atlas-logo.png": "1f7875bb08f0915b54dd6fcfb788aaaa9560e6ae",
     "/Monotop/assets/link-button-icons/arrow-right.svg": "af470bf999977a5c4088da5c380a4ad949274dc1",
     "/Monotop/assets/link-button-icons/envelope.svg": "053454379feb917705e67bca4e5041293c156283",
     "/Monotop/assets/main-page/award-logo.png": "c1d0ae0d935c541829a583f0856d9093b1da4307",
     "/Monotop/assets/main-page/main-1.jpg": "9ad330a4411d3237b26d62e4510fb17ce1632070",
     "/Monotop/assets/main-page/main-2.jpg": "b4c19d07a4522b794d631164831eb307af8bfb9c",
     "/Monotop/assets/monotop_logo.svg": "3734d8fd3817b506635eb5f65e4a5d18c5b5ac14",
-    "/Monotop/index.html": "17401ce33c904398e1277c3d39c12dc08f0f15cb",
-    "/Monotop/main.c8aea818b0a9ae3d.js": "70ba573b199c6b6d531e9ad723baecf8f70ba918",
+    "/Monotop/index.html": "ca74584c5b10e45b94181a551e06a21c08971395",
+    "/Monotop/main.6ddf2dd622e93d6c.js": "4702a42d9e28c52fe4fe2b713d99bf8ca69d343f",
     "/Monotop/manifest.webmanifest": "a2ee0893cc1ab1a6d7226cf0c4e37a3fc27e5b7b",
     "/Monotop/polyfills.56233e4eeb75a32d.js": "847cf4d57c65c573daaf596891d3ded06219296b",
     "/Monotop/runtime.35494deeadb9e5c7.js": "a2364d7cbd3e576798949c1074b9bb253f3c902c",
-    "/Monotop/styles.baabb57572b9c1e8.css": "31e4d997f4e6fe84a0e68dea33a9d565a035a86f"
+    "/Monotop/styles.0b7af6b5010bd64c.css": "9b0eb6c0714e458976cc2d7f5c9036ba8598d67f"
   },
   "navigationUrls": [
     {
