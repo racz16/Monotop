@@ -39,6 +39,7 @@ describe('LinkButtonComponent', () => {
         fixture.componentRef.setInput('link', 'test-path');
         fixture.detectChanges();
         const a: HTMLAnchorElement = fixture.nativeElement.querySelector('a');
+        expect(a).toBeTruthy();
         expect(a.href).toContain('test-path');
     });
 
@@ -47,6 +48,7 @@ describe('LinkButtonComponent', () => {
         fixture.componentRef.setInput('isExternal', true);
         fixture.detectChanges();
         const a: HTMLAnchorElement = fixture.nativeElement.querySelector('a');
+        expect(a).toBeTruthy();
         expect(a.href).toBe('mailto:test@gmail.com');
     });
 

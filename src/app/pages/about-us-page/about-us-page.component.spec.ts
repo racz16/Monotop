@@ -79,6 +79,7 @@ describe('AboutUsPageComponent', () => {
         );
         expect(listTitle).toBeTruthy();
         expect(listTitle.textContent).toBe('Cégünk fő tevékenységei:');
+        expect(listItems).toBeTruthy();
         expect(listItems.length).toBe(5);
         expect(listItems[0]?.textContent).toBe('szálerősített nagytáblás, vágott fuga mentes ipari padlók');
         expect(listItems[1]?.textContent).toBe('vágott fugás ipari padlók');
@@ -93,7 +94,7 @@ describe('AboutUsPageComponent', () => {
         const linkComponent = link.componentInstance;
         expect(linkComponent).toBeTruthy();
         expect(linkComponent.svgIcon).toBe('arrow-right');
-        expect(linkComponent.link).toBe('tevekenysegek');
+        expect(linkComponent.link).toBe('/tevekenysegek');
         expect(linkComponent.svgIconAlt).toBe('Jobbra mutató nyíl');
         expect(linkComponent.isExternal).toBe(false);
         expect(link.nativeElement).toBeTruthy();
