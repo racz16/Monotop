@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-list-box',
@@ -6,4 +6,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     styleUrls: ['./list-box.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ListBoxComponent {}
+export class ListBoxComponent {
+    @Input() headerTitle = '';
+    @Input() headerBackgroundImagePath = '';
+
+    get backgroundPath(): string {
+        return `linear-gradient(0deg, rgba(0 0 0 / 70%) 0%, transparent 50%), url(assets/activities-page/${this.headerBackgroundImagePath})`;
+    }
+}

@@ -1,1 +1,8 @@
-<p>list-box works!</p>
+<div class="h-100 d-flex flex-column">
+    <div class="d-flex align-items-end flex-shrink-0 text-white header" [style.backgroundImage]="backgroundPath">
+        {{ headerTitle }}
+    </div>
+    <div class="flex-grow-1 content">
+        <ng-content></ng-content>
+    </div>
+</div>

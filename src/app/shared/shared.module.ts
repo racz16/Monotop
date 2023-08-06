@@ -9,6 +9,6 @@ import { WorkTogetherComponent } from './work-together/work-together.component';
 @NgModule({
     declarations: [LinkButtonComponent, DotsComponent, WorkTogetherComponent, ListBoxComponent],
     imports: [CommonModule, RouterModule],
-    exports: [LinkButtonComponent, DotsComponent, WorkTogetherComponent],
+    exports: [LinkButtonComponent, DotsComponent, ListBoxComponent, WorkTogetherComponent],
 })
 export class SharedModule {}

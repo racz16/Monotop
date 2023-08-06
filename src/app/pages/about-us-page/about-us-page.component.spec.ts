@@ -79,6 +79,7 @@ describe('AboutUsPageComponent', () => {
         );
         expect(listTitle).toBeTruthy();
         expect(listTitle.textContent).toBe('Cégünk fő tevékenységei:');
+        expect(listItems).toBeTruthy();
         expect(listItems.length).toBe(5);
         expect(listItems[0]?.textContent).toBe('szálerősített nagytáblás, vágott fuga mentes ipari padlók');
         expect(listItems[1]?.textContent).toBe('vágott fugás ipari padlók');
