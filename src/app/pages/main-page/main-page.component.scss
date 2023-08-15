@@ -35,6 +35,11 @@
     color: $monotop-dark-blue;
 }
 
+picture img {
+    width: 100%;
+    height: auto;
+}
+
 .green-card {
     background-color: $light-green;
     width: 100%;
@@ -113,12 +118,12 @@
         width: 375px;
     }
 
-    .image-2 {
+    picture img.image-2 {
         width: 75%;
     }
 
     .dots-2 {
-        right: 11.5%;
+        right: 13%;
         top: 16%;
         z-index: 10;
     }
@@ -147,8 +152,8 @@
     }
 
     .dots-2 {
-        right: 15%;
-        top: 25%;
+        right: 14%;
+        top: 29.25%;
         z-index: 10;
     }
 
@@ -173,7 +178,7 @@
     }
 
     .dots-2 {
-        right: 16.5%;
+        right: 15.25%;
         top: 22%;
     }
 
