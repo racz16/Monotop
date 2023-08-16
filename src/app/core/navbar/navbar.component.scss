@@ -7,6 +7,22 @@ nav {
     border-top: 3px solid transparent;
     border-bottom: 3px solid $monotop-dark-blue;
 
+    .skip-to-content {
+        background-color: $monotop-blue;
+        padding: 16px 24px;
+        transform: translateX(-100%);
+
+        &:focus {
+            top: 64px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &.menu-opened {
+                top: 230px;
+            }
+        }
+    }
+
     img {
         margin-inline-end: 16px;
     }
@@ -41,6 +57,13 @@ nav {
     nav {
         padding: 24px 0 16px 0;
 
+        .skip-to-content {
+            &:focus,
+            &.menu-opened:focus {
+                top: 100px;
+            }
+        }
+
         img {
             margin-inline-end: 32px;
         }
@@ -54,6 +77,15 @@ nav {
 @include media-breakpoint-up(xl) {
     nav {
         padding: 48px 0 32px 0;
+
+        .skip-to-content {
+            padding: 24px 32px;
+
+            &:focus,
+            &.menu-opened:focus {
+                top: 152px;
+            }
+        }
 
         li {
             margin-inline-start: 32px;

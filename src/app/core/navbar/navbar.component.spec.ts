@@ -22,6 +22,12 @@ describe('NavbarComponent', () => {
         expect(component).toBeTruthy();
     });
 
+    it('should display the skip to content link', () => {
+        const skipToContentLink = fixture.nativeElement.querySelector('.skip-to-content');
+        expect(skipToContentLink).toBeTruthy();
+        expect(skipToContentLink.textContent).toContain('Ugrás a tartalomhoz');
+    });
+
     it('should display the logo and the company name', () => {
         const img: HTMLImageElement = fixture.nativeElement.querySelector('img');
         const span: HTMLSpanElement = fixture.nativeElement.querySelector('span');

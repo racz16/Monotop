@@ -1,4 +1,12 @@
 <nav class="navbar navbar-dark navbar-expand-lg">
+    <a
+        class="position-absolute text-white text-decoration-none text-nowrap skip-to-content"
+        [class.menu-opened]="!isMenuCollapsed"
+        [routerLink]="currentUrl"
+        fragment="main-content"
+    >
+        Ugrás a tartalomhoz
+    </a>
     <div class="container container-big d-flex align-items-center">
         <a class="d-flex align-items-center text-decoration-none" routerLink="">
             <img src="assets/monotop_logo.svg" width="48" height="36" alt="Monotop Kft. logó" />
