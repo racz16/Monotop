@@ -10,7 +10,6 @@ export class LinkButtonComponent {
     @Input() link = '';
     @Input() isExternal = false;
     @Input() svgIcon?: string;
-    @Input() svgIconAlt?: string;
 
     get iconSrc(): string {
         return `assets/link-button-icons/${this.svgIcon}.svg`;

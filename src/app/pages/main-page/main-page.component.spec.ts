@@ -42,7 +42,6 @@ describe('MainPageComponent', () => {
         expect(linkComponent).toBeTruthy();
         expect(linkComponent.svgIcon).toBe('arrow-right');
         expect(linkComponent.link).toBe('/tevekenysegek');
-        expect(linkComponent.svgIconAlt).toBe('Jobbra mutató nyíl');
         expect(linkComponent.isExternal).toBe(false);
         expect(link.nativeElement).toBeTruthy();
         expect(link.nativeElement.textContent).toContain('Tevékenységek');
@@ -71,9 +70,9 @@ describe('MainPageComponent', () => {
         const image2: HTMLImageElement = fixture.nativeElement.querySelector('.image-container-2 img');
         const awardLogo: HTMLImageElement = fixture.nativeElement.querySelector('.award-card img');
         expect(image1).toBeTruthy();
-        expect(image1.src).toContain('main-1.jpg');
+        expect(image1.src).toContain('main-1-700.jpg');
         expect(image2).toBeTruthy();
-        expect(image2.src).toContain('main-2.jpg');
+        expect(image2.src).toContain('main-2-840.jpg');
         expect(awardLogo).toBeTruthy();
         expect(awardLogo.src).toContain('award-logo.png');
     });

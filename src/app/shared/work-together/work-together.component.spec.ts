@@ -40,7 +40,6 @@ describe('WorkTogetherComponent', () => {
         expect(linkComponent).toBeTruthy();
         expect(linkComponent.svgIcon).toBe('envelope');
         expect(linkComponent.link).toBe('mailto:info@monotop.hu');
-        expect(linkComponent.svgIconAlt).toBe('Boríték');
         expect(linkComponent.isExternal).toBe(true);
         expect(link.nativeElement).toBeTruthy();
         expect(link.nativeElement.textContent).toContain('Ajánlatot kérek');

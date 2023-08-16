@@ -38,15 +38,17 @@ describe('AboutUsPageComponent', () => {
     });
 
     it('should display images', () => {
-        const images: NodeListOf<HTMLImageElement> = fixture.nativeElement.querySelectorAll('img');
+        const images: NodeListOf<HTMLImageElement> = fixture.nativeElement.querySelectorAll('.logos img');
+        const map: HTMLImageElement = fixture.nativeElement.querySelector('.hungary');
         expect(images).toBeTruthy();
-        expect(images.length).toBe(9);
-        expect(images[0]?.src).toContain('hungary-map.svg');
-        expect(images[1]?.src).toContain('delta-logo.png');
-        expect(images[2]?.src).toContain('durostone-logo.png');
-        expect(images[3]?.src).toContain('grh-logo.svg');
-        expect(images[4]?.src).toContain('ddc-logo.png');
-        expect(images[5]?.src).toContain('mmi-atlas-logo.png');
+        expect(images.length).toBe(10);
+        expect(images[0]?.src).toContain('delta-logo.jpg');
+        expect(images[1]?.src).toContain('durostone-logo.jpg');
+        expect(images[2]?.src).toContain('grh-logo.svg');
+        expect(images[3]?.src).toContain('ddc-logo.jpg');
+        expect(images[4]?.src).toContain('mmi-atlas-logo.jpg');
+        expect(map).toBeTruthy();
+        expect(map.src).toContain('hungary-map.svg');
     });
 
     it('should display text', () => {
@@ -95,7 +97,6 @@ describe('AboutUsPageComponent', () => {
         expect(linkComponent).toBeTruthy();
         expect(linkComponent.svgIcon).toBe('arrow-right');
         expect(linkComponent.link).toBe('/tevekenysegek');
-        expect(linkComponent.svgIconAlt).toBe('Jobbra mutató nyíl');
         expect(linkComponent.isExternal).toBe(false);
         expect(link.nativeElement).toBeTruthy();
         expect(link.nativeElement.textContent).toContain('Tovább a tevékenységekhez');

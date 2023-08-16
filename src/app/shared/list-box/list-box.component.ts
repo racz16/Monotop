@@ -11,6 +11,6 @@ export class ListBoxComponent {
     @Input() headerBackgroundImagePath = '';
 
     get backgroundPath(): string {
-        return `linear-gradient(0deg, rgba(0 0 0 / 70%) 0%, transparent 50%), url(assets/activities-page/${this.headerBackgroundImagePath})`;
+        return `linear-gradient(0deg, rgba(0 0 0 / 70%) 0%, transparent 50%), url(assets/${this.headerBackgroundImagePath})`;
     }
 }

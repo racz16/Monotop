@@ -52,7 +52,7 @@ describe('LinkButtonComponent', () => {
         expect(a.href).toBe('mailto:test@gmail.com');
     });
 
-    it('should display an icon and an alt text', () => {
+    it('should display an icon', () => {
         let img: HTMLImageElement = fixture.nativeElement.querySelector('img');
         expect(img).toBeFalsy();
 
@@ -62,9 +62,5 @@ describe('LinkButtonComponent', () => {
         expect(img).toBeTruthy();
         expect(img.src).toContain('assets/link-button-icons/test-icon.svg');
         expect(img.alt).toBeFalsy();
-
-        fixture.componentRef.setInput('svgIconAlt', 'test alt text');
-        fixture.detectChanges();
-        expect(img.alt).toBe('test alt text');
     });
 });
