@@ -30,7 +30,14 @@
     </div>
     <div class="d-flex justify-content-center align-items-center mb-180">
         <div class="position-relative">
-            <img width="100%" src="assets/about-us-page/hungary-map.svg" alt="" />
+            <img
+                src="assets/about-us-page/hungary-map.svg"
+                alt=""
+                class="hungary"
+                loading="lazy"
+                width="972"
+                height="600"
+            />
             <div
                 *ngFor="let city of cities; let i = index"
                 class="position-absolute rounded-circle city"
@@ -47,12 +54,53 @@
             </div>
         </div>
     </div>
-    <div class="d-flex justify-content-around flex-column flex-sm-row logos mb-152">
-        <img src="assets/about-us-page/delta-logo.png" alt="" />
-        <img src="assets/about-us-page/durostone-logo.png" alt="" />
-        <img src="assets/about-us-page/grh-logo.svg" alt="" />
-        <img src="assets/about-us-page/ddc-logo.png" alt="" />
-        <img src="assets/about-us-page/mmi-atlas-logo.png" alt="" />
+    <div class="position-relative overflow-hidden text-nowrap logos mb-152">
+        <div class="d-inline-block d-lg-flex justify-content-around align-items-center logos-slide">
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/delta-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/delta-logo.webp" />
+                <img src="assets/about-us-page/delta-logo.jpg" alt="" loading="lazy" width="89" height="60" />
+            </picture>
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/durostone-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/durostone-logo.webp" />
+                <img src="assets/about-us-page/durostone-logo.jpg" alt="" loading="lazy" width="168" height="42" />
+            </picture>
+            <img src="assets/about-us-page/grh-logo.svg" alt="" loading="lazy" width="61" height="64" />
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/ddc-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/ddc-logo.webp" />
+                <img src="assets/about-us-page/ddc-logo.jpg" alt="" loading="lazy" width="134" height="46" />
+            </picture>
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/mmi-atlas-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/mmi-atlas-logo.webp" />
+                <img src="assets/about-us-page/mmi-atlas-logo.jpg" alt="" loading="lazy" width="92" height="54" />
+            </picture>
+        </div>
+        <div class="d-inline-block d-lg-none logos-slide">
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/delta-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/delta-logo.webp" />
+                <img src="assets/about-us-page/delta-logo.jpg" alt="" loading="lazy" width="89" height="60" />
+            </picture>
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/durostone-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/durostone-logo.webp" />
+                <img src="assets/about-us-page/durostone-logo.jpg" alt="" loading="lazy" width="168" height="42" />
+            </picture>
+            <img src="assets/about-us-page/grh-logo.svg" alt="" loading="lazy" width="61" height="64" />
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/ddc-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/ddc-logo.webp" />
+                <img src="assets/about-us-page/ddc-logo.jpg" alt="" loading="lazy" width="134" height="46" />
+            </picture>
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/mmi-atlas-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/mmi-atlas-logo.webp" />
+                <img src="assets/about-us-page/mmi-atlas-logo.jpg" alt="" loading="lazy" width="92" height="54" />
+            </picture>
+        </div>
     </div>
 </section>
 <section class="text-white activities d-flex">
