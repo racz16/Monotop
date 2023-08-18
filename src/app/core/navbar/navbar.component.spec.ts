@@ -32,7 +32,7 @@ describe('NavbarComponent', () => {
         const img: HTMLImageElement = fixture.nativeElement.querySelector('img');
         const span: HTMLSpanElement = fixture.nativeElement.querySelector('span');
         expect(img).toBeTruthy();
-        expect(img.src).toContain('monotop_logo.svg');
+        expect(img.src).toContain('logo.svg');
         expect(img.alt).toContain('Monotop Kft. logó');
         expect(span).toBeTruthy();
         expect(span.textContent).toBe('MONOTOP Kft.');

@@ -74,7 +74,7 @@ describe('AboutUsPageComponent', () => {
         );
         expect(references.length).toBe(2);
         expect(references[0]?.textContent).toContain(
-            'Számos országosan is elismert generálkivitelezőt tudhatunk megrendelőink között.Elvégzett munkáink között szerepelnek az alábbi cégek beruházásai a teljesség igénye nélkül:'
+            'Számos országosan is elismert generálkivitelezőt tudhatunk megrendelőink között. Elvégzett munkáink között szerepelnek az alábbi cégek beruházásai a teljesség igénye nélkül:'
         );
         expect(references[1]?.textContent).toContain(
             'Aréna Pláza • Audi • Axiál • Coca-Cola • Electrolux • Gyermelyi • Lego • Mercedes • Richter Gedeon • Sága • Samsung • Schwarzmüller • Shell • Spar • Stop-Shop • Tesco • West End • És még sokan mások…'
