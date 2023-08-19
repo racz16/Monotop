@@ -2,7 +2,7 @@
     <a
         class="position-absolute text-white text-decoration-none text-nowrap skip-to-content"
         [class.menu-opened]="!isMenuCollapsed"
-        [routerLink]="currentUrl"
+        [routerLink]="rs.currentUrl$ | async"
         fragment="main-content"
     >
         Ugrás a tartalomhoz

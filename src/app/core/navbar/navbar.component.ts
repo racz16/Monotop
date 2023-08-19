@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { EventType, Router } from '@angular/router';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MenuItem } from '../interfaces/menu-item';
+import { RoutingService } from '../services/routing.service';
 
 @Component({
     selector: 'app-navbar',
@@ -38,12 +38,5 @@ export class NavbarComponent {
     ];
     currentUrl = '';
 
-    constructor(private router: Router, private cd: ChangeDetectorRef) {
-        this.router.events.subscribe((event) => {
-            if (event.type === EventType.NavigationEnd && !event.url.endsWith('#main-content')) {
-                this.currentUrl = event.url ?? '';
-                this.cd.markForCheck();
-            }
-        });
-    }
+    constructor(public rs: RoutingService) {}
 }

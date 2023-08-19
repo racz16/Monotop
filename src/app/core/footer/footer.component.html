@@ -1,5 +1,5 @@
 <footer class="text-white">
-    <div *ngIf="isExtendedFooterVisible" class="footer-extended d-flex">
+    <div *ngIf="(rs.isContactPageOpened$ | async) === false" class="footer-extended d-flex">
         <div class="container container-small mt-120 mb-120">
             <div class="row">
                 <div class="col-12 col-lg-6">

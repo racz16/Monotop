@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { EventType, Router } from '@angular/router';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RoutingService } from '../services/routing.service';
 
 @Component({
     selector: 'app-footer',
@@ -8,14 +8,5 @@ import { EventType, Router } from '@angular/router';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent {
-    isExtendedFooterVisible = true;
-
-    constructor(private router: Router, private cd: ChangeDetectorRef) {
-        this.router.events.subscribe((event) => {
-            if (event.type === EventType.NavigationEnd) {
-                this.isExtendedFooterVisible = !event.url.includes('kapcsolat');
-                this.cd.markForCheck();
-            }
-        });
-    }
+    constructor(public rs: RoutingService) {}
 }
