@@ -2,9 +2,9 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { By } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
-import { DotsComponent } from 'src/app/shared/dots/dots.component';
+import { DotsComponent } from 'src/app/shared/components/dots/dots.component';
+import { WorkTogetherComponent } from 'src/app/shared/components/work-together/work-together.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { WorkTogetherComponent } from 'src/app/shared/work-together/work-together.component';
 import { MainPageComponent } from './main-page.component';
 
 describe('MainPageComponent', () => {

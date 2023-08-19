@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Rectangle } from '../interfaces/rectangle';
+import { Rectangle } from '../../interfaces/rectangle';
 
 @Component({
     selector: 'app-work-together',

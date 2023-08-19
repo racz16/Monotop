@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Rectangle } from '../interfaces/rectangle';
+import { Rectangle } from '../../interfaces/rectangle';
 import { DotsComponent } from './dots.component';
 
 describe('DotsComponent', () => {

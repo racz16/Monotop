@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MenuItem } from '../interfaces/menu-item';
-import { RoutingService } from '../services/routing.service';
+import { MenuItem } from '../../interfaces/menu-item';
+import { RoutingService } from '../../services/routing.service';
 
 @Component({
     selector: 'app-navbar',

@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { By } from '@angular/platform-browser';
-import { ListBoxComponent } from 'src/app/shared/list-box/list-box.component';
+import { ListBoxComponent } from 'src/app/shared/components/list-box/list-box.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ActivitiesPageComponent } from './activities-page.component';
 

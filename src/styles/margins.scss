@@ -1,5 +1,5 @@
 @import 'bootstrap-configuration';
-@import '../../node_modules/bootstrap/scss/mixins/breakpoints';
+@import '/node_modules/bootstrap/scss/mixins/breakpoints';
 
 @mixin m-240($size: 240px) {
     .mt-240 {

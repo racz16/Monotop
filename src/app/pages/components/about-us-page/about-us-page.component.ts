@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Rectangle } from 'src/app/shared/interfaces/rectangle';
-import { City } from '../interfaces/city';
+import { City } from '../../interfaces/city';
 
 @Component({
     selector: 'app-about-us-page',
