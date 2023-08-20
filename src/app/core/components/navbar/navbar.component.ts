@@ -36,7 +36,6 @@ export class NavbarComponent {
             path: 'kapcsolat',
         },
     ];
-    currentUrl = '';
 
     constructor(public rs: RoutingService) {}
 }
