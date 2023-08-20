@@ -1,0 +1,100 @@
+@import 'colors';
+@import 'bootstrap-configuration';
+@import '/node_modules/bootstrap/scss/mixins/breakpoints';
+
+header {
+    background-color: $monotop-blue;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid $monotop-dark-blue;
+
+    .skip-to-content {
+        background-color: $monotop-blue;
+        padding: 16px 24px;
+        transform: translateX(-100%);
+
+        &:focus {
+            top: 64px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &.menu-opened {
+                top: 230px;
+            }
+        }
+    }
+
+    img {
+        margin-inline-end: 16px;
+    }
+
+    span {
+        font-size: 21px;
+    }
+
+    button {
+        margin-inline-start: 16px;
+    }
+
+    li {
+        list-style-type: none;
+        margin-inline-start: 64px;
+
+        a {
+            color: white;
+
+            &:hover {
+                color: color-mix(in srgb, $neon-green 50%, white);
+            }
+
+            &.active-menu-item {
+                color: $neon-green;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    header {
+        padding: 24px 0 16px 0;
+
+        .skip-to-content {
+            &:focus,
+            &.menu-opened:focus {
+                top: 100px;
+            }
+        }
+
+        img {
+            margin-inline-end: 32px;
+        }
+
+        li {
+            margin-inline-start: 16px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    header {
+        padding: 48px 0 32px 0;
+
+        .skip-to-content {
+            padding: 24px 32px;
+
+            &:focus,
+            &.menu-opened:focus {
+                top: 152px;
+            }
+        }
+
+        li {
+            margin-inline-start: 32px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    header li {
+        margin-inline-start: 64px;
+    }
+}

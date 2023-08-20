@@ -6,7 +6,7 @@
             "name": "app",
             "installMode": "prefetch",
             "resources": {
-                "files": ["/assets/monotop_logo.svg", "/index.html", "/manifest.webmanifest", "/*.css", "/*.js"]
+                "files": ["/assets/logos/logo.svg", "/index.html", "/manifest.webmanifest", "/*.css", "/*.js"]
             }
         },
         {

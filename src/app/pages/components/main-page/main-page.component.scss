@@ -1,0 +1,192 @@
+@import 'colors';
+@import 'bootstrap-configuration';
+@import '/node_modules/bootstrap/scss/mixins/breakpoints';
+
+.floor {
+    margin-bottom: 24px;
+}
+
+aside {
+    background-color: $monotop-green;
+    padding: 24px 32px;
+    font-size: 16px;
+
+    .award-title {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .award-text {
+        width: 100px;
+        font-size: 16px;
+    }
+}
+
+.image-container {
+    margin-block: 32px;
+
+    .dots-1 {
+        left: 15%;
+        bottom: -70px;
+    }
+}
+
+.years-text {
+    color: $monotop-dark-blue;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+.green-card {
+    background-color: $light-green;
+    width: 100%;
+    padding: 32px 20px;
+    margin-top: 32px;
+
+    .green-card-title {
+        color: $neon-green;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 110%;
+    }
+
+    .green-card-text {
+        color: $monotop-blue;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .floor {
+        margin-bottom: 32px;
+    }
+
+    aside {
+        position: absolute;
+        top: -50px;
+        padding: 12px 16px;
+        right: 50px;
+    }
+
+    .image-container {
+        margin-bottom: 0;
+    }
+
+    .green-card {
+        margin-top: 40px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .floor {
+        margin-bottom: 32px;
+    }
+
+    aside {
+        top: -45px;
+    }
+
+    .image-container {
+        margin-top: 40px;
+    }
+
+    .green-card {
+        margin-top: 48px;
+
+        .green-card-title {
+            font-size: 50px;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .floor {
+        margin-bottom: 52px;
+    }
+
+    .image-container {
+        margin-top: 0;
+    }
+
+    aside {
+        top: -50px;
+    }
+
+    .years-title {
+        width: 425px;
+    }
+
+    .years-text {
+        width: 375px;
+    }
+
+    picture img.image-2 {
+        width: 75%;
+    }
+
+    .dots-2 {
+        right: 13%;
+        top: 17%;
+        z-index: 10;
+    }
+
+    .green-card {
+        position: absolute;
+        width: auto;
+        top: 20%;
+        right: 0;
+        margin-top: 0;
+
+        .green-card-text {
+            width: 325px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .floor {
+        margin-bottom: 59px;
+    }
+
+    aside {
+        padding: 24px 32px;
+        top: -100px;
+    }
+
+    .dots-2 {
+        right: 14%;
+        top: 30%;
+        z-index: 10;
+    }
+
+    .green-card {
+        padding: 64px 40px;
+        top: 22%;
+
+        .green-card-title {
+            font-size: 64px;
+        }
+
+        .green-card-text {
+            width: 425px;
+            color: $monotop-blue;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .floor {
+        margin-bottom: 76px;
+    }
+
+    .dots-2 {
+        right: 15.25%;
+        top: 23%;
+    }
+
+    .green-card {
+        top: 24%;
+    }
+}

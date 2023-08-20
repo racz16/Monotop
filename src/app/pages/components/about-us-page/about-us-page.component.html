@@ -1,0 +1,169 @@
+<div class="d-flex align-items-end page-title">
+    <div class="container container-small">
+        <h2>Rólunk</h2>
+    </div>
+</div>
+<app-dots class="dots d-none d-xl-block position-absolute" [rectangles]="rectangle"></app-dots>
+<section class="container container-small mt-120">
+    <div class="about-us">
+        <p class="mb-32">
+            A Monotop Iparipadló Építő és Műszaki Fejlesztő Kft. 1995-ben alakult, magyar tulajdonú építőipari
+            vállalkozás. A cég 30 fős saját létszámmal rendelkezik és megalakulása óta végez speciális építőipari
+            tevékenységet.
+        </p>
+        <p class="mb-180">Évente 100.000 - 150.000 m² ipari padlót, térbetont, aljzatbetont, felbetont készítünk.</p>
+    </div>
+</section>
+<section class="container container-small">
+    <h3 class="mb-64">Hol és kikkel dolgoztunk eddig?</h3>
+    <div class="references mb-120">
+        <p class="mb-32">
+            Számos országosan is elismert generálkivitelezőt tudhatunk megrendelőink között. Elvégzett munkáink között
+            szerepelnek az alábbi cégek beruházásai a teljesség igénye nélkül:
+        </p>
+        <ul class="d-flex flex-wrap p-0 references-text-2">
+            <li>Aréna Pláza</li>
+            <li>Audi</li>
+            <li>Axiál</li>
+            <li>Coca-Cola</li>
+            <li>Electrolux</li>
+            <li>Gyermelyi</li>
+            <li>Lego</li>
+            <li>Mercedes</li>
+            <li>Richter Gedeon</li>
+            <li>Sága</li>
+            <li>Samsung</li>
+            <li>Schwarzmüller</li>
+            <li>Shell</li>
+            <li>Spar</li>
+            <li>Stop-Shop</li>
+            <li>Tesco</li>
+            <li>West End</li>
+            <li>És még sokan mások…</li>
+        </ul>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mb-180">
+        <figure class="position-relative">
+            <img
+                src="assets/about-us-page/hungary-map.svg"
+                alt="Magyarország térképe, rajta bejelölve azok fontosabb városok, ahol a Monotop Kft. dolgozott."
+                class="hungary"
+                loading="lazy"
+                width="972"
+                height="600"
+            />
+            <div
+                *ngFor="let city of cities; let i = index"
+                class="position-absolute rounded-circle city"
+                [class]="'city-' + (i + 1)"
+                placement="top"
+                [ngbTooltip]="tooltipTemplate"
+            >
+                <ng-template #tooltipTemplate>
+                    <div class="d-flex flex-column align-items-start">
+                        <div class="tooltip-title">{{ city.company }}</div>
+                        <div class="tooltip-text">{{ city.name }}</div>
+                    </div>
+                </ng-template>
+            </div>
+        </figure>
+    </div>
+    <div class="position-relative overflow-hidden text-nowrap logos mb-152">
+        <div class="d-inline-block d-lg-flex justify-content-around align-items-center logos-slide">
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/delta-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/delta-logo.webp" />
+                <img
+                    src="assets/about-us-page/delta-logo.jpg"
+                    alt="Delta-E Kft. logó"
+                    loading="lazy"
+                    width="89"
+                    height="60"
+                />
+            </picture>
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/durostone-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/durostone-logo.webp" />
+                <img
+                    src="assets/about-us-page/durostone-logo.jpg"
+                    alt="Durostone Kft. logó"
+                    loading="lazy"
+                    width="168"
+                    height="42"
+                />
+            </picture>
+            <img src="assets/about-us-page/grh-logo.svg" alt="GRH Kft. logó" loading="lazy" width="61" height="64" />
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/ddc-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/ddc-logo.webp" />
+                <img
+                    src="assets/about-us-page/ddc-logo.jpg"
+                    alt="Duna-Dráva Cement Kft. logó"
+                    loading="lazy"
+                    width="134"
+                    height="46"
+                />
+            </picture>
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/mmi-atlas-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/mmi-atlas-logo.webp" />
+                <img
+                    src="assets/about-us-page/mmi-atlas-logo.jpg"
+                    alt="MMI Atlas Kft. logó"
+                    loading="lazy"
+                    width="92"
+                    height="54"
+                />
+            </picture>
+        </div>
+        <div class="d-inline-block d-lg-none logos-slide">
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/delta-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/delta-logo.webp" />
+                <img src="assets/about-us-page/delta-logo.jpg" alt="" loading="lazy" width="89" height="60" />
+            </picture>
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/durostone-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/durostone-logo.webp" />
+                <img src="assets/about-us-page/durostone-logo.jpg" alt="" loading="lazy" width="168" height="42" />
+            </picture>
+            <img src="assets/about-us-page/grh-logo.svg" alt="" loading="lazy" width="61" height="64" />
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/ddc-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/ddc-logo.webp" />
+                <img src="assets/about-us-page/ddc-logo.jpg" alt="" loading="lazy" width="134" height="46" />
+            </picture>
+            <picture>
+                <source type="image/avif" srcset="assets/about-us-page/mmi-atlas-logo.avif" />
+                <source type="image/webp" srcset="assets/about-us-page/mmi-atlas-logo.webp" />
+                <img src="assets/about-us-page/mmi-atlas-logo.jpg" alt="" loading="lazy" width="92" height="54" />
+            </picture>
+        </div>
+    </div>
+</section>
+<section class="text-white activities d-flex">
+    <div class="container container-small mt-152 mb-152">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h3 class="text-white mb-64">Tevékenységeink</h3>
+                <div>Cégünk fő tevékenységei:</div>
+                <ul class="m-0">
+                    <li>szálerősített nagytáblás, vágott fuga mentes ipari padlók</li>
+                    <li>vágott fugás ipari padlók</li>
+                    <li>térbetonok, beton útburkolatok</li>
+                    <li>felbetonok, alaplemezek, aljzatbetonok</li>
+                    <li>felújítás, állagmegóvás, padlójavítások</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-lg-end">
+                <app-link-button class="d-none d-lg-block" link="/tevekenysegek" svgIcon="arrow-right">
+                    Tovább a tevékenységekhez
+                </app-link-button>
+                <app-link-button class="d-block d-lg-none mt-64" link="/tevekenysegek" svgIcon="arrow-right">
+                    Tevékenységeink
+                </app-link-button>
+            </div>
+        </div>
+    </div>
+</section>
+<app-work-together></app-work-together>

@@ -1,0 +1,41 @@
+<header class="navbar navbar-dark navbar-expand-lg">
+    <a
+        class="position-absolute text-white text-decoration-none text-nowrap skip-to-content"
+        [class.menu-opened]="!isMenuCollapsed"
+        [routerLink]="rs.currentUrl$ | async"
+        fragment="main-content"
+    >
+        Ugrás a tartalomhoz
+    </a>
+    <div class="container container-big d-flex align-items-center">
+        <a class="d-flex align-items-center text-decoration-none" routerLink="">
+            <img src="assets/logos/logo.svg" width="48" height="36" alt="Monotop Kft. logó" />
+            <span class="text-white">MONOTOP Kft.</span>
+        </a>
+        <button
+            class="navbar-toggler"
+            (click)="isMenuCollapsed = !isMenuCollapsed"
+            aria-label="Menü"
+            aria-controls="navigation"
+            [ariaExpanded]="!isMenuCollapsed"
+        >
+            ☰
+        </button>
+        <nav [ngbCollapse]="isMenuCollapsed" id="navigation" class="collapse navbar-collapse">
+            <ul class="d-flex justify-content-end flex-column flex-lg-row w-100 p-0 m-0">
+                <li *ngFor="let menuItem of menuItems">
+                    <a
+                        class="text-decoration-none"
+                        [routerLink]="menuItem.path"
+                        routerLinkActive="active-menu-item"
+                        [ariaCurrent]="(rs.currentUrl$ | async) === '/' + menuItem.path ? 'page' : null"
+                        [routerLinkActiveOptions]="{ exact: true }"
+                        (click)="isMenuCollapsed = true"
+                    >
+                        {{ menuItem.name }}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

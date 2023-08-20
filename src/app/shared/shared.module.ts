@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DotsComponent } from './dots/dots.component';
-import { LinkButtonComponent } from './link-button/link-button.component';
-import { ListBoxComponent } from './list-box/list-box.component';
-import { WorkTogetherComponent } from './work-together/work-together.component';
+import { DotsComponent } from './components/dots/dots.component';
+import { LinkButtonComponent } from './components/link-button/link-button.component';
+import { ListBoxComponent } from './components/list-box/list-box.component';
+import { WorkTogetherComponent } from './components/work-together/work-together.component';
 
 @NgModule({
     declarations: [LinkButtonComponent, DotsComponent, WorkTogetherComponent, ListBoxComponent],
