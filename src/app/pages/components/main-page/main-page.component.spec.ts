@@ -94,10 +94,10 @@ describe('MainPageComponent', () => {
         expect(awardText.textContent).toBe('Mesterdíjas kivitelező');
         expect(yearsText).toBeTruthy();
         expect(yearsText.textContent).toContain(
-            'Évente 100.000 - 150.000 m2 monolit betonlemezt, ipari padlót, alaplemezt, felbetont készítünk el.'
+            'Évente 100.000 - 150.000 m² monolit betonlemezt, ipari padlót, alaplemezt, felbetont készítünk el.'
         );
         expect(greenCardTitle).toBeTruthy();
-        expect(greenCardTitle.textContent).toContain('150.000 m2');
+        expect(greenCardTitle.textContent).toContain('150.000 m²');
         expect(greenCardText).toBeTruthy();
         expect(greenCardText.textContent).toContain(
             'Ez nagyjából annyi, mint 21 nagypályás futballpálya vagy a teljes budai rakpart lebetonozása - minden évben.'

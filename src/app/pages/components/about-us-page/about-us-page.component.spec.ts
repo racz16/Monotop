@@ -71,7 +71,7 @@ describe('AboutUsPageComponent', () => {
             'A Monotop Iparipadló Építő és Műszaki Fejlesztő Kft. 1995-ben alakult, magyar tulajdonú építőipari vállalkozás. A cég 30 fős saját létszámmal rendelkezik és megalakulása óta végez speciális építőipari tevékenységet.'
         );
         expect(aboutUs[1]?.textContent).toContain(
-            'Évente 100.000 - 150.000 m2 ipari padlót, térbetont, aljzatbetont, felbetont készítünk.'
+            'Évente 100.000 - 150.000 m² ipari padlót, térbetont, aljzatbetont, felbetont készítünk.'
         );
         expect(referencesText).toBeTruthy();
         expect(referencesText.textContent).toContain(
