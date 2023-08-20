@@ -54,10 +54,11 @@ describe('AboutUsPageComponent', () => {
     it('should display text', () => {
         const h2: HTMLHeadingElement = fixture.nativeElement.querySelector('h2');
         const h3s: NodeListOf<HTMLHeadingElement> = fixture.nativeElement.querySelectorAll('h3');
-        const aboutUs: NodeListOf<HTMLDivElement> = fixture.nativeElement.querySelectorAll('.about-us div');
-        const references: NodeListOf<HTMLDivElement> = fixture.nativeElement.querySelectorAll('.references div');
+        const aboutUs: NodeListOf<HTMLParagraphElement> = fixture.nativeElement.querySelectorAll('.about-us p');
+        const referencesText: HTMLParagraphElement = fixture.nativeElement.querySelector('.references p');
+        const references: NodeListOf<HTMLLIElement> = fixture.nativeElement.querySelectorAll('.references li');
         const listTitle: HTMLDivElement = fixture.nativeElement.querySelector('.activities h3 + div');
-        const listItems: NodeListOf<HTMLLIElement> = fixture.nativeElement.querySelectorAll('li');
+        const listItems: NodeListOf<HTMLLIElement> = fixture.nativeElement.querySelectorAll('.activities li');
         expect(h2).toBeTruthy();
         expect(h2.textContent).toBe('Rólunk');
         expect(h3s).toBeTruthy();
@@ -72,13 +73,29 @@ describe('AboutUsPageComponent', () => {
         expect(aboutUs[1]?.textContent).toContain(
             'Évente 100.000 - 150.000 m2 ipari padlót, térbetont, aljzatbetont, felbetont készítünk.'
         );
-        expect(references.length).toBe(2);
-        expect(references[0]?.textContent).toContain(
+        expect(referencesText).toBeTruthy();
+        expect(referencesText.textContent).toContain(
             'Számos országosan is elismert generálkivitelezőt tudhatunk megrendelőink között. Elvégzett munkáink között szerepelnek az alábbi cégek beruházásai a teljesség igénye nélkül:'
         );
-        expect(references[1]?.textContent).toContain(
-            'Aréna Pláza • Audi • Axiál • Coca-Cola • Electrolux • Gyermelyi • Lego • Mercedes • Richter Gedeon • Sága • Samsung • Schwarzmüller • Shell • Spar • Stop-Shop • Tesco • West End • És még sokan mások…'
-        );
+        expect(references.length).toBe(18);
+        expect(references[0]?.textContent).toBe('Aréna Pláza');
+        expect(references[1]?.textContent).toBe('Audi');
+        expect(references[2]?.textContent).toBe('Axiál');
+        expect(references[3]?.textContent).toBe('Coca-Cola');
+        expect(references[4]?.textContent).toBe('Electrolux');
+        expect(references[5]?.textContent).toBe('Gyermelyi');
+        expect(references[6]?.textContent).toBe('Lego');
+        expect(references[7]?.textContent).toBe('Mercedes');
+        expect(references[8]?.textContent).toBe('Richter Gedeon');
+        expect(references[9]?.textContent).toBe('Sága');
+        expect(references[10]?.textContent).toBe('Samsung');
+        expect(references[11]?.textContent).toBe('Schwarzmüller');
+        expect(references[12]?.textContent).toBe('Shell');
+        expect(references[13]?.textContent).toBe('Spar');
+        expect(references[14]?.textContent).toBe('Stop-Shop');
+        expect(references[15]?.textContent).toBe('Tesco');
+        expect(references[16]?.textContent).toBe('West End');
+        expect(references[17]?.textContent).toBe('És még sokan mások…');
         expect(listTitle).toBeTruthy();
         expect(listTitle.textContent).toBe('Cégünk fő tevékenységei:');
         expect(listItems).toBeTruthy();

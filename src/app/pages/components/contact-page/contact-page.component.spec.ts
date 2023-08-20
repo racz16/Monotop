@@ -22,7 +22,7 @@ describe('ContactPageComponent', () => {
     it('should display general informations', () => {
         const contact: HTMLHeadingElement = fixture.nativeElement.querySelector('h1');
         const monotop: HTMLDivElement = fixture.nativeElement.querySelector('.green-monotop');
-        const informations: NodeListOf<HTMLDivElement> = fixture.nativeElement.querySelectorAll('address div');
+        const informations: NodeListOf<HTMLDivElement> = fixture.nativeElement.querySelectorAll('.company-data div');
         expect(contact).toBeTruthy();
         expect(contact.textContent).toBe('Kapcsolat');
         expect(monotop).toBeTruthy();

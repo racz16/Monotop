@@ -37,7 +37,7 @@ describe('FooterComponent', () => {
         expect(companyName).toBeTruthy();
         expect(companyName.textContent).toBe('Monotop Kft.');
 
-        const contactInfos: NodeListOf<HTMLDivElement> = fixture.nativeElement.querySelectorAll('address div');
+        const contactInfos: NodeListOf<HTMLDivElement> = fixture.nativeElement.querySelectorAll('.company-data div');
         expect(contactInfos.length).toBe(4);
         expect(contactInfos[0]?.textContent).toBe('1214 Budapest, II. Rákóczi Ferenc út 315.');
         expect(contactInfos[1]?.textContent).toBe('+36 1 2000 380');

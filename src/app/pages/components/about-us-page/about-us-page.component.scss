@@ -15,8 +15,14 @@ h2 {
     line-height: 28px;
     color: $monotop-dark-blue;
 
-    .references-text-2 {
+    .references-text-2 li {
         font-weight: 600;
+        list-style-type: none;
+
+        &:not(:last-child)::after {
+            content: '•';
+            padding-inline: 5px;
+        }
     }
 }
 

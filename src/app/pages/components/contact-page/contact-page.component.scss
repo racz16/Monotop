@@ -3,7 +3,7 @@
 @import '/node_modules/bootstrap/scss/mixins/breakpoints';
 
 section {
-    address {
+    .company-data {
         color: $monotop-dark-blue;
         gap: 8px;
 
@@ -48,7 +48,7 @@ section {
 
 @include media-breakpoint-up(sm) {
     section {
-        address,
+        .company-data,
         .people-text {
             gap: 16px;
         }

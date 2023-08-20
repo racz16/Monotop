@@ -2,7 +2,7 @@
 @import 'bootstrap-configuration';
 @import '/node_modules/bootstrap/scss/mixins/breakpoints';
 
-nav {
+header {
     background-color: $monotop-blue;
     border-top: 3px solid transparent;
     border-bottom: 3px solid $monotop-dark-blue;
@@ -54,7 +54,7 @@ nav {
 }
 
 @include media-breakpoint-up(lg) {
-    nav {
+    header {
         padding: 24px 0 16px 0;
 
         .skip-to-content {
@@ -75,7 +75,7 @@ nav {
 }
 
 @include media-breakpoint-up(xl) {
-    nav {
+    header {
         padding: 48px 0 32px 0;
 
         .skip-to-content {
@@ -94,7 +94,7 @@ nav {
 }
 
 @include media-breakpoint-up(xxl) {
-    nav li {
+    header li {
         margin-inline-start: 64px;
     }
 }

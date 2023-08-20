@@ -7,10 +7,11 @@
         </div>
         <div class="col-12 col-lg-6 position-relative">
             <div class="position-relative image-container">
-                <picture>
-                    <source
-                        type="image/avif"
-                        sizes="
+                <figure>
+                    <picture>
+                        <source
+                            type="image/avif"
+                            sizes="
                             (max-width: 576px) 555px,
                             (max-width: 768px) 520px,
                             (max-width: 992px) 700px,
@@ -18,11 +19,11 @@
                             (max-width: 1440px) 500px,
                             590px
                         "
-                        srcset="assets/main-page/main-1-500.avif 500w, assets/main-page/main-1-700.avif 700w"
-                    />
-                    <source
-                        type="image/webp"
-                        sizes="
+                            srcset="assets/main-page/main-1-500.avif 500w, assets/main-page/main-1-700.avif 700w"
+                        />
+                        <source
+                            type="image/webp"
+                            sizes="
                             (max-width: 576px) 555px,
                             (max-width: 768px) 520px,
                             (max-width: 992px) 700px,
@@ -30,14 +31,20 @@
                             (max-width: 1440px) 500px,
                             590px
                         "
-                        srcset="assets/main-page/main-1-500.webp 500w, assets/main-page/main-1-700.webp 700w"
-                    />
-                    <img src="assets/main-page/main-1-700.jpg" alt="" width="700" height="469" />
-                </picture>
+                            srcset="assets/main-page/main-1-500.webp 500w, assets/main-page/main-1-700.webp 700w"
+                        />
+                        <img
+                            src="assets/main-page/main-1-700.jpg"
+                            alt="Csiszolt beton egy csarnokban, csiszológépekkel a háttérben."
+                            width="700"
+                            height="469"
+                        />
+                    </picture>
+                </figure>
                 <app-dots class="position-absolute d-none d-sm-block dots-1" [rectangles]="rectangle"></app-dots>
             </div>
             <div class="d-flex justify-content-center flex-row">
-                <span class="d-inline-flex flex-column align-items-center text-white award-card">
+                <aside class="d-inline-flex flex-column align-items-center text-white">
                     <img
                         src="assets/main-page/award-logo.png"
                         alt="Mesterdíjas kivitelező logó"
@@ -47,7 +54,7 @@
                     />
                     <span class="award-title mb-24">MONOTOP Kft.</span>
                     <span class="text-center award-text">Mesterdíjas kivitelező</span>
-                </span>
+                </aside>
             </div>
         </div>
     </div>
@@ -56,15 +63,16 @@
     <div class="row">
         <div class="col position-relative">
             <h1 class="years-title mb-40">28 éve töretlenül</h1>
-            <div class="years-text mb-64">
+            <p class="years-text mb-64">
                 Évente 100.000 - 150.000 m<sup>2</sup> monolit betonlemezt, ipari padlót, alaplemezt, felbetont
                 készítünk el.
-            </div>
+            </p>
             <div class="position-relative image-container-2">
-                <picture>
-                    <source
-                        type="image/avif"
-                        sizes="
+                <figure>
+                    <picture>
+                        <source
+                            type="image/avif"
+                            sizes="
                             (max-width: 576px) 500px,
                             (max-width: 768px) 535px,
                             (max-width: 992px) 660px,
@@ -72,11 +80,11 @@
                             (max-width: 1440px) 735px,
                             840px
                         "
-                        srcset="assets/main-page/main-2-535.avif 535w, assets/main-page/main-2-840.avif 840w"
-                    />
-                    <source
-                        type="image/webp"
-                        sizes="
+                            srcset="assets/main-page/main-2-535.avif 535w, assets/main-page/main-2-840.avif 840w"
+                        />
+                        <source
+                            type="image/webp"
+                            sizes="
                             (max-width: 576px) 500px,
                             (max-width: 768px) 535px,
                             (max-width: 992px) 660px,
@@ -84,18 +92,19 @@
                             (max-width: 1440px) 735px,
                             840px
                         "
-                        srcset="assets/main-page/main-2-535.webp 535w, assets/main-page/main-2-840.webp 840w"
-                    />
-                    <img src="assets/main-page/main-2-840.jpg" alt="" class="image-2" width="840" height="483" />
-                </picture>
+                            srcset="assets/main-page/main-2-535.webp 535w, assets/main-page/main-2-840.webp 840w"
+                        />
+                        <img src="assets/main-page/main-2-840.jpg" alt="" class="image-2" width="840" height="483" />
+                    </picture>
+                </figure>
                 <app-dots class="position-absolute d-none d-lg-block dots-2" [rectangles]="rectangle"></app-dots>
             </div>
             <div class="d-inline-flex flex-column align-items-center green-card">
                 <div class="green-card-title mb-48">150.000 m<sup>2</sup></div>
-                <div class="text-center green-card-text">
+                <p class="text-center m-0 green-card-text">
                     Ez nagyjából annyi, mint 21 nagypályás futballpálya vagy a teljes budai rakpart lebetonozása -
                     minden évben.
-                </div>
+                </p>
             </div>
         </div>
     </div>

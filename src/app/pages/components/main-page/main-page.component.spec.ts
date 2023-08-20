@@ -68,7 +68,7 @@ describe('MainPageComponent', () => {
     it('should display images', () => {
         const image1: HTMLImageElement = fixture.nativeElement.querySelector('.image-container img');
         const image2: HTMLImageElement = fixture.nativeElement.querySelector('.image-container-2 img');
-        const awardLogo: HTMLImageElement = fixture.nativeElement.querySelector('.award-card img');
+        const awardLogo: HTMLImageElement = fixture.nativeElement.querySelector('aside img');
         expect(image1).toBeTruthy();
         expect(image1.src).toContain('main-1-700.jpg');
         expect(image2).toBeTruthy();

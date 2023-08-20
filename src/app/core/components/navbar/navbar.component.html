@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark navbar-expand-lg">
+<header class="navbar navbar-dark navbar-expand-lg">
     <a
         class="position-absolute text-white text-decoration-none text-nowrap skip-to-content"
         [class.menu-opened]="!isMenuCollapsed"
@@ -13,7 +13,7 @@
             <span class="text-white">MONOTOP Kft.</span>
         </a>
         <button class="navbar-toggler" (click)="isMenuCollapsed = !isMenuCollapsed">☰</button>
-        <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+        <nav [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
             <ul class="d-flex justify-content-end flex-column flex-lg-row w-100 p-0 m-0">
                 <li *ngFor="let menuItem of menuItems">
                     <a
@@ -27,6 +27,6 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </div>
-</nav>
+</header>

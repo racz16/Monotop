@@ -6,7 +6,7 @@
     margin-bottom: 24px;
 }
 
-.award-card {
+aside {
     background-color: $monotop-green;
     padding: 24px 32px;
     font-size: 16px;
@@ -63,6 +63,13 @@ picture img {
         margin-bottom: 32px;
     }
 
+    aside {
+        position: absolute;
+        top: -50px;
+        padding: 12px 16px;
+        right: 50px;
+    }
+
     .image-container {
         margin-bottom: 0;
     }
@@ -70,18 +77,15 @@ picture img {
     .green-card {
         margin-top: 40px;
     }
-
-    .award-card {
-        position: absolute;
-        top: -35px;
-        padding: 12px 16px;
-        right: 50px;
-    }
 }
 
 @include media-breakpoint-up(md) {
     .floor {
         margin-bottom: 32px;
+    }
+
+    aside {
+        top: -45px;
     }
 
     .image-container {
@@ -106,7 +110,7 @@ picture img {
         margin-top: 0;
     }
 
-    .award-card {
+    aside {
         top: -50px;
     }
 
@@ -124,7 +128,7 @@ picture img {
 
     .dots-2 {
         right: 13%;
-        top: 16%;
+        top: 17%;
         z-index: 10;
     }
 
@@ -146,14 +150,14 @@ picture img {
         margin-bottom: 59px;
     }
 
-    .award-card {
+    aside {
         padding: 24px 32px;
         top: -100px;
     }
 
     .dots-2 {
         right: 14%;
-        top: 29.25%;
+        top: 30%;
         z-index: 10;
     }
 
@@ -179,7 +183,7 @@ picture img {
 
     .dots-2 {
         right: 15.25%;
-        top: 22%;
+        top: 23%;
     }
 
     .green-card {
