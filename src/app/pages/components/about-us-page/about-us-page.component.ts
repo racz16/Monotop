@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RoutingService } from 'src/app/core/services/routing.service';
 
 @Component({
     selector: 'app-about-us-page',
@@ -6,4 +7,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     styleUrls: ['./about-us-page.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AboutUsPageComponent {}
+export class AboutUsPageComponent {
+    constructor(rs: RoutingService) {
+        rs.setPageTitle('Rólunk');
+    }
+}

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { EventType, NavigationEnd, Router } from '@angular/router';
 import { Observable, filter, map } from 'rxjs';
 
@@ -9,7 +10,7 @@ export class RoutingService {
     isContactPageOpened$: Observable<boolean>;
     currentUrl$: Observable<string>;
 
-    constructor(private router: Router) {
+    constructor(private router: Router, private titleService: Title) {
         const navigationEnd$ = this.router.events.pipe(
             filter((e) => e.type === EventType.NavigationEnd),
             map((e) => e as NavigationEnd)
@@ -25,5 +26,9 @@ export class RoutingService {
         } else {
             return url.substring(0, hashmarkIndex);
         }
+    }
+
+    setPageTitle(title: string): void {
+        this.titleService.setTitle(`Monotop Kft. | ${title}`);
     }
 }

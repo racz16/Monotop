@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RoutingService } from 'src/app/core/services/routing.service';
 import { Rectangle } from 'src/app/shared/interfaces/rectangle';
 
 @Component({
@@ -10,4 +11,8 @@ import { Rectangle } from 'src/app/shared/interfaces/rectangle';
 export class MainPageComponent {
     rectangle: Rectangle[] = [{ x: 0, y: 0, width: 12, height: 6 }];
     yearsSinceFoundation = (new Date().getFullYear() - 1995).toString();
+
+    constructor(rs: RoutingService) {
+        rs.setPageTitle('Főoldal');
+    }
 }
