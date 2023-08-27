@@ -1,0 +1,159 @@
+@import 'colors';
+@import 'bootstrap-configuration';
+@import '/node_modules/bootstrap/scss/mixins/breakpoints';
+
+.tooltip-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tooltip-text {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.hungary {
+    width: 100%;
+    height: auto;
+}
+
+.city {
+    width: 16px;
+    height: 16px;
+    background-color: $neon-green;
+
+    &.city-1 {
+        top: calc(34% - 8px);
+        left: calc(49% - 8px);
+    }
+
+    &.city-2 {
+        top: calc(39% - 8px);
+        left: calc(49% - 8px);
+    }
+
+    &.city-3 {
+        top: calc(36% - 8px);
+        left: calc(45% - 8px);
+    }
+
+    &.city-4 {
+        top: calc(29% - 8px);
+        left: calc(29% - 8px);
+    }
+
+    &.city-5 {
+        top: calc(39% - 8px);
+        left: calc(13% - 8px);
+    }
+
+    &.city-6 {
+        top: calc(77% - 8px);
+        left: calc(10% - 8px);
+    }
+
+    &.city-7 {
+        top: calc(69.5% - 8px);
+        left: calc(29.5% - 8px);
+    }
+
+    &.city-8 {
+        top: calc(9% - 8px);
+        left: calc(64% - 8px);
+    }
+
+    &.city-9 {
+        top: calc(16% - 8px);
+        left: calc(67% - 8px);
+    }
+
+    &.city-10 {
+        top: calc(50% - 8px);
+        left: calc(76% - 8px);
+    }
+
+    &.city-11 {
+        top: calc(41% - 8px);
+        left: calc(83% - 8px);
+    }
+
+    &:hover {
+        background-color: $monotop-blue;
+    }
+}
+
+@include media-breakpoint-only(xs) {
+    .city {
+        &.city-1 {
+            top: calc(32% - 8px);
+            left: calc(50% - 8px);
+        }
+
+        &.city-2 {
+            top: calc(41% - 8px);
+            left: calc(50% - 8px);
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .city {
+        width: 33px;
+        height: 33px;
+
+        &.city-1 {
+            top: calc(33% - 16px);
+            left: calc(49% - 16px);
+        }
+
+        &.city-2 {
+            top: calc(39% - 16px);
+            left: calc(49% - 16px);
+        }
+
+        &.city-3 {
+            top: calc(36% - 16px);
+            left: calc(45% - 16px);
+        }
+
+        &.city-4 {
+            top: calc(30% - 16px);
+            left: calc(29% - 16px);
+        }
+
+        &.city-5 {
+            top: calc(39% - 16px);
+            left: calc(13% - 16px);
+        }
+
+        &.city-6 {
+            top: calc(77% - 16px);
+            left: calc(10% - 16px);
+        }
+
+        &.city-7 {
+            top: calc(69.5% - 16px);
+            left: calc(29.5% - 16px);
+        }
+
+        &.city-8 {
+            top: calc(9% - 16px);
+            left: calc(64% - 16px);
+        }
+
+        &.city-9 {
+            top: calc(16% - 16px);
+            left: calc(67% - 16px);
+        }
+
+        &.city-10 {
+            top: calc(50% - 16px);
+            left: calc(76% - 16px);
+        }
+
+        &.city-11 {
+            top: calc(41% - 16px);
+            left: calc(83% - 16px);
+        }
+    }
+}

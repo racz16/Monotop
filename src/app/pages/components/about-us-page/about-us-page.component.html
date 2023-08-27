@@ -13,7 +13,7 @@
 </section>
 <section class="container container-small">
     <h2 class="mb-64">Hol és kikkel dolgoztunk eddig?</h2>
-    <div class="references mb-120">
+    <div class="references mb-80">
         <p class="mb-32">
             Számos országosan is elismert generálkivitelezőt tudhatunk megrendelőink között. Elvégzett munkáink között
             szerepelnek az alábbi cégek beruházásai a teljesség igénye nélkül:
@@ -39,34 +39,8 @@
             <li>És még sokan mások…</li>
         </ul>
     </div>
-    <div class="d-flex justify-content-center align-items-center mb-180">
-        <figure class="position-relative">
-            <img
-                src="assets/about-us-page/hungary-map.svg"
-                alt="Magyarország térképe, rajta bejelölve azok a fontosabb városok, ahol a Monotop Kft. dolgozott."
-                class="hungary"
-                loading="lazy"
-                width="972"
-                height="600"
-            />
-            <div
-                *ngFor="let city of cities; let i = index"
-                class="position-absolute rounded-circle city"
-                [class]="'city-' + (i + 1)"
-                placement="top"
-                [ngbTooltip]="tooltipTemplate"
-            >
-                <ng-template #tooltipTemplate>
-                    <div class="d-flex flex-column align-items-start">
-                        <div class="tooltip-title">{{ city.company }}</div>
-                        <div class="tooltip-text">{{ city.name }}</div>
-                    </div>
-                </ng-template>
-            </div>
-        </figure>
-    </div>
     <div class="position-relative overflow-hidden text-nowrap logos mb-152">
-        <div class="d-inline-block d-lg-flex justify-content-around align-items-center logos-slide">
+        <div class="d-inline-block d-lg-flex justify-content-between align-items-center logos-slide">
             <picture>
                 <source type="image/avif" srcset="assets/about-us-page/delta-logo.avif" />
                 <source type="image/webp" srcset="assets/about-us-page/delta-logo.webp" />

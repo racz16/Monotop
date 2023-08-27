@@ -2,7 +2,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { By } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
-import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AboutUsPageComponent } from './about-us-page.component';
 
@@ -13,7 +12,7 @@ describe('AboutUsPageComponent', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
             declarations: [AboutUsPageComponent],
-            imports: [RouterTestingModule, SharedModule, NgbTooltipModule],
+            imports: [RouterTestingModule, SharedModule],
         });
         fixture = TestBed.createComponent(AboutUsPageComponent);
         component = fixture.componentInstance;
@@ -24,9 +23,8 @@ describe('AboutUsPageComponent', () => {
         expect(component).toBeTruthy();
     });
 
-    it('should display images', () => {
+    it('should display the logos', () => {
         const images: NodeListOf<HTMLImageElement> = fixture.nativeElement.querySelectorAll('.logos img');
-        const map: HTMLImageElement = fixture.nativeElement.querySelector('.hungary');
         expect(images).toBeTruthy();
         expect(images.length).toBe(10);
         expect(images[0]?.src).toContain('delta-logo.jpg');
@@ -34,8 +32,6 @@ describe('AboutUsPageComponent', () => {
         expect(images[2]?.src).toContain('grh-logo.svg');
         expect(images[3]?.src).toContain('ddc-logo.jpg');
         expect(images[4]?.src).toContain('mmi-atlas-logo.jpg');
-        expect(map).toBeTruthy();
-        expect(map.src).toContain('hungary-map.svg');
     });
 
     it('should display text', () => {
