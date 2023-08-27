@@ -16,9 +16,15 @@ describe('MainPageComponent', () => {
             declarations: [MainPageComponent],
             imports: [SharedModule, RouterTestingModule],
         });
+        jasmine.clock().install();
+        jasmine.clock().mockDate(new Date('2025-05-12'));
         fixture = TestBed.createComponent(MainPageComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
+    });
+
+    afterEach(() => {
+        jasmine.clock().uninstall();
     });
 
     it('should create', () => {
@@ -87,7 +93,7 @@ describe('MainPageComponent', () => {
         expect(h1s).toBeTruthy();
         expect(h1s.length).toBe(2);
         expect(h1s[0]?.textContent).toBe('Ipari padlót készítünk');
-        expect(h1s[1]?.textContent).toBe('28 éve töretlenül');
+        expect(h1s[1]?.textContent).toBe('30 éve töretlenül');
         expect(awardTitle).toBeTruthy();
         expect(awardTitle.textContent).toBe('MONOTOP Kft.');
         expect(awardText).toBeTruthy();
