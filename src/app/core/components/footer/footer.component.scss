@@ -9,7 +9,7 @@
         font-weight: 500;
 
         .footer-monotop {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 400;
         }
 
@@ -48,8 +48,14 @@
 }
 
 @include media-breakpoint-up(lg) {
-    .footer-extended .container iframe {
-        height: 100%;
-        margin-top: 0;
+    .footer-extended .container {
+        .footer-monotop {
+            font-size: 40px;
+        }
+
+        iframe {
+            height: 100%;
+            margin-top: 0;
+        }
     }
 }
