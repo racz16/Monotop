@@ -25,11 +25,9 @@ export class NavbarComponent {
         },
         {
             name: 'Referenciák',
-            path: 'referenciak',
         },
         {
             name: 'Galéria',
-            path: 'galeria',
         },
         {
             name: 'Kapcsolat',
