@@ -47,9 +47,9 @@ describe('NavbarComponent', () => {
         expect(lis[2]?.textContent).toContain('Tevékenységek');
         expect(lis[2]?.href).toContain('tevekenysegek');
         expect(lis[3]?.textContent).toContain('Referenciák');
-        expect(lis[3]?.href).toContain('referenciak');
+        expect(lis[3]?.href).toBeFalsy();
         expect(lis[4]?.textContent).toContain('Galéria');
-        expect(lis[4]?.href).toContain('galeria');
+        expect(lis[4]?.href).toBeFalsy();
         expect(lis[5]?.textContent).toContain('Kapcsolat');
         expect(lis[5]?.href).toContain('kapcsolat');
     });

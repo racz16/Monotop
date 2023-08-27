@@ -30,7 +30,7 @@
                         routerLinkActive="active-menu-item"
                         [ariaCurrent]="(rs.currentUrl$ | async) === '/' + menuItem.path ? 'page' : null"
                         [routerLinkActiveOptions]="{ exact: true }"
-                        [class.disabled]="!menuItem.path"
+                        [class.disabled]="menuItem.path === undefined"
                         (click)="isMenuCollapsed = true"
                     >
                         {{ menuItem.name }}
