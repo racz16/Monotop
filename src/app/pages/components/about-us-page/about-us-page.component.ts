@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Rectangle } from 'src/app/shared/interfaces/rectangle';
-import { City } from '../../interfaces/city';
+import { RoutingService } from 'src/app/core/services/routing.service';
 
 @Component({
     selector: 'app-about-us-page',
@@ -9,6 +8,7 @@ import { City } from '../../interfaces/city';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutUsPageComponent {
-    rectangle: Rectangle[] = [{ x: 0, y: 0, width: 12, height: 24 }];
-    cities: City[] = new Array<City>(11).fill({ name: 'Debrecen', company: 'Coca Cola' });
+    constructor(rs: RoutingService) {
+        rs.setPageTitle('Rólunk');
+    }
 }

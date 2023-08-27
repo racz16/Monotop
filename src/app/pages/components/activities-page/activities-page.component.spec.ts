@@ -24,9 +24,9 @@ describe('ActivitiesPageComponent', () => {
     });
 
     it('should display the header', () => {
-        const h2: HTMLHeadingElement = fixture.nativeElement.querySelector('h2');
-        expect(h2).toBeTruthy();
-        expect(h2.textContent).toBe('Tevékenységeink');
+        const h1: HTMLHeadingElement = fixture.nativeElement.querySelector('h1');
+        expect(h1).toBeTruthy();
+        expect(h1.textContent).toBe('Tevékenységeink');
     });
 
     it('should display the 1st list box', () => {
@@ -36,7 +36,7 @@ describe('ActivitiesPageComponent', () => {
         const listItems: NodeListOf<HTMLLIElement> = ul.querySelectorAll('li');
         expect(listBox).toBeTruthy();
         expect(listBoxComponent.headerTitle).toBe('Nagytáblás ipari padló');
-        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/nagytablas.jpg');
+        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/nagytablas.webp');
         expect(listItems.length).toBe(11);
         expect(listItems[0]?.textContent).toContain('kopásálló, könnyen takarítható, sima, pormentes felület');
         expect(listItems[1]?.textContent).toContain(
@@ -66,7 +66,7 @@ describe('ActivitiesPageComponent', () => {
         const listItems: NodeListOf<HTMLLIElement> = ul.querySelectorAll('li');
         expect(listBox).toBeTruthy();
         expect(listBoxComponent.headerTitle).toBe('Vágott fugás ipari padló');
-        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/vagott.jpg');
+        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/vagott.webp');
         expect(listItems.length).toBe(7);
         expect(listItems[0]?.textContent).toContain('kopásálló, könnyen takarítható, sima, pormentes felület');
         expect(listItems[1]?.textContent).toContain(
@@ -90,7 +90,7 @@ describe('ActivitiesPageComponent', () => {
         const listItems: NodeListOf<HTMLLIElement> = ul.querySelectorAll('li');
         expect(listBox).toBeTruthy();
         expect(listBoxComponent.headerTitle).toBe('Térbetonok, beton útburkolatok');
-        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/terbeton.jpg');
+        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/terbeton.webp');
         expect(listItems.length).toBe(7);
         expect(listItems[0]?.textContent).toContain('közlekedési utak, rakodóudvarok, benzinkutak létesítéséhez');
         expect(listItems[1]?.textContent).toContain('nagy teherbírású');
@@ -110,7 +110,7 @@ describe('ActivitiesPageComponent', () => {
         const listItems: NodeListOf<HTMLLIElement> = ul.querySelectorAll('li');
         expect(listBox).toBeTruthy();
         expect(listBoxComponent.headerTitle).toBe('Alaplemezek');
-        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/alaplemez.jpg');
+        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/alaplemez.webp');
         expect(listItems.length).toBe(6);
         expect(listItems[0]?.textContent).toContain('épületek vasalt lemezalapjai kopóréteggel vagy burkolat alá');
         expect(listItems[1]?.textContent).toContain('25-30 cm vastagságtól, 80 cm vastagságig');
@@ -127,7 +127,7 @@ describe('ActivitiesPageComponent', () => {
         const listItems: NodeListOf<HTMLLIElement> = ul.querySelectorAll('li');
         expect(listBox).toBeTruthy();
         expect(listBoxComponent.headerTitle).toBe('Felbetonok');
-        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/felbeton.jpg');
+        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/felbeton.webp');
         expect(listItems.length).toBe(2);
         expect(listItems[0]?.textContent).toContain('előregyártott födémelemekkel együttdolgozó vasalt betonszerkezet');
         expect(listItems[1]?.textContent).toContain('kopóréteggel vagy burkolat alá');
@@ -140,7 +140,7 @@ describe('ActivitiesPageComponent', () => {
         const listItems: NodeListOf<HTMLLIElement> = ul.querySelectorAll('li');
         expect(listBox).toBeTruthy();
         expect(listBoxComponent.headerTitle).toBe('Aljzatbetonok, szerelőbetonok');
-        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/aljzatbeton.jpg');
+        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/aljzatbeton.webp');
         expect(listItems.length).toBe(3);
         expect(listItems[0]?.textContent).toContain('vasalt vagy vasalás nélküli aljzatbetonok burkolatok alá');
         expect(listItems[1]?.textContent).toContain('vágott fugás kivitelben');
@@ -154,7 +154,7 @@ describe('ActivitiesPageComponent', () => {
         const listItems: NodeListOf<HTMLLIElement> = ul.querySelectorAll('li');
         expect(listBox).toBeTruthy();
         expect(listBoxComponent.headerTitle).toBe('Felújítás, állagmegóvás');
-        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/felujitas.jpg');
+        expect(listBoxComponent.headerBackgroundImagePath).toBe('activities-page/felujitas.webp');
         expect(listItems.length).toBe(6);
         expect(listItems[0]?.textContent).toContain(
             'fugasérülések, betontáblák élletöréseinek, kagylós kitörések javítása'

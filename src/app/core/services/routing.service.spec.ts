@@ -63,4 +63,9 @@ describe('RoutingService', () => {
         });
         navigationEventSubject.next(new NavigationEnd(1, '/kapcsolat', '/kapcsolat'));
     });
+
+    it('should set the page title', () => {
+        service.setPageTitle('Teszt');
+        expect(document.title).toBe('Monotop Kft. | Teszt');
+    });
 });

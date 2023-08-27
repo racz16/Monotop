@@ -42,7 +42,11 @@ header {
         a {
             color: white;
 
-            &:hover {
+            &.disabled {
+                color: lightgray;
+            }
+
+            &:not(.disabled):hover {
                 color: color-mix(in srgb, $neon-green 50%, white);
             }
 

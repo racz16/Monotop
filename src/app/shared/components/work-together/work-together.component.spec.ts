@@ -23,7 +23,7 @@ describe('WorkTogetherComponent', () => {
     });
 
     it('should display a title and a text', () => {
-        const title: HTMLHeadingElement = fixture.nativeElement.querySelector('h3');
+        const title: HTMLHeadingElement = fixture.nativeElement.querySelector('h2');
         const text: HTMLDivElement = fixture.nativeElement.querySelector('.work-together-text');
         expect(title).toBeTruthy();
         expect(title.textContent).toBe('Dolgozzunk együtt!');

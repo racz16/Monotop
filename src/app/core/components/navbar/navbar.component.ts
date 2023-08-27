@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { MenuItem } from '../../interfaces/menu-item';
 import { RoutingService } from '../../services/routing.service';
 
@@ -9,6 +10,7 @@ import { RoutingService } from '../../services/routing.service';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavbarComponent {
+    environment = environment;
     isMenuCollapsed = true;
     menuItems: MenuItem[] = [
         {
@@ -25,11 +27,11 @@ export class NavbarComponent {
         },
         {
             name: 'Referenciák',
-            path: 'referenciak',
+            path: environment.production ? undefined : 'referenciak',
         },
         {
             name: 'Galéria',
-            path: 'galeria',
+            path: environment.production ? undefined : 'galeria',
         },
         {
             name: 'Kapcsolat',

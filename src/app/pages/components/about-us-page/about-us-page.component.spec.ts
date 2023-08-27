@@ -2,8 +2,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { By } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
-import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
-import { DotsComponent } from 'src/app/shared/components/dots/dots.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AboutUsPageComponent } from './about-us-page.component';
 
@@ -14,7 +12,7 @@ describe('AboutUsPageComponent', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
             declarations: [AboutUsPageComponent],
-            imports: [RouterTestingModule, SharedModule, NgbTooltipModule],
+            imports: [RouterTestingModule, SharedModule],
         });
         fixture = TestBed.createComponent(AboutUsPageComponent);
         component = fixture.componentInstance;
@@ -25,21 +23,8 @@ describe('AboutUsPageComponent', () => {
         expect(component).toBeTruthy();
     });
 
-    it('should display dots', () => {
-        const dots = fixture.debugElement.queryAll(By.css('app-dots'));
-        expect(dots).toBeTruthy();
-        expect(dots.length).toBe(2);
-
-        const dotsComponent: DotsComponent = dots[0]?.componentInstance;
-        expect(dotsComponent).toBeTruthy();
-        expect(dotsComponent.rectangles).toEqual([{ x: 0, y: 0, width: 12, height: 24 }]);
-        expect(dotsComponent.normalColor).toBe('#62e067');
-        expect(dotsComponent.intersectionColor).toBe('#555f6733');
-    });
-
-    it('should display images', () => {
+    it('should display the logos', () => {
         const images: NodeListOf<HTMLImageElement> = fixture.nativeElement.querySelectorAll('.logos img');
-        const map: HTMLImageElement = fixture.nativeElement.querySelector('.hungary');
         expect(images).toBeTruthy();
         expect(images.length).toBe(10);
         expect(images[0]?.src).toContain('delta-logo.jpg');
@@ -47,24 +32,22 @@ describe('AboutUsPageComponent', () => {
         expect(images[2]?.src).toContain('grh-logo.svg');
         expect(images[3]?.src).toContain('ddc-logo.jpg');
         expect(images[4]?.src).toContain('mmi-atlas-logo.jpg');
-        expect(map).toBeTruthy();
-        expect(map.src).toContain('hungary-map.svg');
     });
 
     it('should display text', () => {
-        const h2: HTMLHeadingElement = fixture.nativeElement.querySelector('h2');
-        const h3s: NodeListOf<HTMLHeadingElement> = fixture.nativeElement.querySelectorAll('h3');
+        const h1: HTMLHeadingElement = fixture.nativeElement.querySelector('h1');
+        const h2s: NodeListOf<HTMLHeadingElement> = fixture.nativeElement.querySelectorAll('h2');
         const aboutUs: NodeListOf<HTMLParagraphElement> = fixture.nativeElement.querySelectorAll('.about-us p');
         const referencesText: HTMLParagraphElement = fixture.nativeElement.querySelector('.references p');
         const references: NodeListOf<HTMLLIElement> = fixture.nativeElement.querySelectorAll('.references li');
-        const listTitle: HTMLDivElement = fixture.nativeElement.querySelector('.activities h3 + div');
+        const listTitle: HTMLDivElement = fixture.nativeElement.querySelector('.activities h2 + div');
         const listItems: NodeListOf<HTMLLIElement> = fixture.nativeElement.querySelectorAll('.activities li');
-        expect(h2).toBeTruthy();
-        expect(h2.textContent).toBe('Rólunk');
-        expect(h3s).toBeTruthy();
-        expect(h3s.length).toBe(3);
-        expect(h3s[0]?.textContent).toBe('Hol és kikkel dolgoztunk eddig?');
-        expect(h3s[1]?.textContent).toBe('Tevékenységeink');
+        expect(h1).toBeTruthy();
+        expect(h1.textContent).toBe('Rólunk');
+        expect(h2s).toBeTruthy();
+        expect(h2s.length).toBe(3);
+        expect(h2s[0]?.textContent).toBe('Hol és kikkel dolgoztunk eddig?');
+        expect(h2s[1]?.textContent).toBe('Tevékenységeink');
         expect(aboutUs).toBeTruthy();
         expect(aboutUs.length).toBe(2);
         expect(aboutUs[0]?.textContent).toContain(

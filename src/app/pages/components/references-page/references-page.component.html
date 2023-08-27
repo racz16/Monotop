@@ -1,0 +1,84 @@
+<div class="container container-small mt-152 mb-152">
+    <h1>Referenciák</h1>
+</div>
+<section class="container container-small mt-152 mb-152">
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae at rem exercitationem sed atque, eius
+        nihil quos eveniet temporibus deleniti dolorem rerum molestias tenetur nemo labore nostrum ipsum omnis?
+        Incidunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae at rem exercitationem sed atque,
+        eius nihil quos eveniet temporibus deleniti dolorem rerum molestias tenetur nemo labore nostrum ipsum omnis?
+        Incidunt.
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-120 mb-240">
+        <figure class="position-relative">
+            <img
+                src="assets/references-page/hungary-map.svg"
+                alt="Magyarország térképe, rajta bejelölve azok a fontosabb városok, ahol a Monotop Kft. dolgozott."
+                class="hungary"
+                width="972"
+                height="600"
+            />
+            <div
+                *ngFor="let city of cities; let i = index"
+                class="position-absolute rounded-circle city"
+                [class]="'city-' + (i + 1)"
+                placement="top"
+                [ngbTooltip]="tooltipTemplate"
+            >
+                <ng-template #tooltipTemplate>
+                    <div class="d-flex flex-column align-items-start">
+                        <div class="tooltip-title">{{ city.company }}</div>
+                        <div class="tooltip-text">{{ city.name }}</div>
+                    </div>
+                </ng-template>
+            </div>
+        </figure>
+    </div>
+</section>
+<section class="d-flex text-white references-list">
+    <div class="container container-small mt-152 mb-152">
+        <h2 class="text-white mb-64">Fontosabb munkáink</h2>
+        <div class="row">
+            <div class="col-4">
+                <ul>
+                    <li>Aréna Pláza - 10.000 m²</li>
+                    <li>Audi - 10.000 m²</li>
+                    <li>Axiál - 10.000 m²</li>
+                    <li>Coca-Cola - 10.000 m²</li>
+                    <li>Electrolux - 10.000 m²</li>
+                    <li>Gyermelyi - 10.000 m²</li>
+                    <li>Lego - 10.000 m²</li>
+                    <li>Mercedes - 10.000 m²</li>
+                    <li>Richter Gedeon - 10.000 m²</li>
+                    <li>Sága - 10.000 m²</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li>Samsung - 10.000 m²</li>
+                    <li>Schwarzmüller - 10.000 m²</li>
+                    <li>Shell - 10.000 m²</li>
+                    <li>Stop-Shop - 10.000 m²</li>
+                    <li>Tesco - 10.000 m²</li>
+                    <li>West End - 10.000 m²</li>
+                    <li>Aréna Pláza - 10.000 m²</li>
+                    <li>Audi - 10.000 m²</li>
+                    <li>Axiál - 10.000 m²</li>
+                    <li>Coca-Cola - 10.000 m²</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li>Electrolux - 10.000 m²</li>
+                    <li>Gyermelyi - 10.000 m²</li>
+                    <li>Lego - 10.000 m²</li>
+                    <li>Mercedes - 10.000 m²</li>
+                    <li>Richter Gedeon - 10.000 m²</li>
+                    <li>Sága - 10.000 m²</li>
+                    <li>Samsung - 10.000 m²</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<app-work-together></app-work-together>

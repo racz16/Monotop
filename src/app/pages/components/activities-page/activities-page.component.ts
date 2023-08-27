@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RoutingService } from 'src/app/core/services/routing.service';
 
 @Component({
     selector: 'app-activities-page',
@@ -6,4 +7,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     styleUrls: ['./activities-page.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ActivitiesPageComponent {}
+export class ActivitiesPageComponent {
+    constructor(rs: RoutingService) {
+        rs.setPageTitle('Tevékenységek');
+    }
+}

@@ -7,6 +7,7 @@
     >
         Ugrás a tartalomhoz
     </a>
+    <span *ngIf="!environment.production" class="position-absolute text-white ms-3"> DEV </span>
     <div class="container container-big d-flex align-items-center">
         <a class="d-flex align-items-center text-decoration-none" routerLink="">
             <img src="assets/logos/logo.svg" width="48" height="36" alt="Monotop Kft. logó" />
@@ -30,6 +31,7 @@
                         routerLinkActive="active-menu-item"
                         [ariaCurrent]="(rs.currentUrl$ | async) === '/' + menuItem.path ? 'page' : null"
                         [routerLinkActiveOptions]="{ exact: true }"
+                        [class.disabled]="menuItem.path === undefined"
                         (click)="isMenuCollapsed = true"
                     >
                         {{ menuItem.name }}
