@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedModule } from 'src/app/shared/shared.module';
 import { GalleryPageComponent } from './gallery-page.component';
 
 describe('GalleryPageComponent', () => {
@@ -10,7 +11,7 @@ describe('GalleryPageComponent', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
             declarations: [GalleryPageComponent],
-            imports: [NgbTooltipModule],
+            imports: [SharedModule, NgbCarouselModule],
         });
         fixture = TestBed.createComponent(GalleryPageComponent);
         component = fixture.componentInstance;
@@ -19,11 +20,5 @@ describe('GalleryPageComponent', () => {
 
     it('should create', () => {
         expect(component).toBeTruthy();
-    });
-
-    it('should display the map', () => {
-        const map: HTMLImageElement = fixture.nativeElement.querySelector('.hungary');
-        expect(map).toBeTruthy();
-        expect(map.src).toContain('hungary-map.svg');
     });
 });

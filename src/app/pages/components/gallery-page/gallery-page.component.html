@@ -1,26 +1,121 @@
-<div class="d-flex justify-content-center align-items-center mb-180">
-    <figure class="position-relative">
-        <img
-            src="assets/about-us-page/hungary-map.svg"
-            alt="Magyarország térképe, rajta bejelölve azok a fontosabb városok, ahol a Monotop Kft. dolgozott."
-            class="hungary"
-            loading="lazy"
-            width="972"
-            height="600"
-        />
-        <div
-            *ngFor="let city of cities; let i = index"
-            class="position-absolute rounded-circle city"
-            [class]="'city-' + (i + 1)"
-            placement="top"
-            [ngbTooltip]="tooltipTemplate"
-        >
-            <ng-template #tooltipTemplate>
-                <div class="d-flex flex-column align-items-start">
-                    <div class="tooltip-title">{{ city.company }}</div>
-                    <div class="tooltip-text">{{ city.name }}</div>
-                </div>
-            </ng-template>
-        </div>
-    </figure>
+<div class="container container-small mt-152 mb-152">
+    <h1>Galéria</h1>
 </div>
+<section class="container container-small">
+    <div class="mb-64">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora consequatur itaque quibusdam voluptatem enim
+        atque blanditiis at modi provident nam officia, dolor quas. Maxime quam deserunt ad repudiandae, ut facilis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, praesentium quae ipsum eius mollitia
+        maxime! Itaque eaque nemo debitis impedit voluptatum sint ad tempore. Eius quisquam temporibus blanditiis nobis
+        labore!
+    </div>
+    <ngb-carousel *ngIf="images" style="background-color: gray">
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img class="d-block w-100" [src]="images[0]" alt="Random second slide" />
+            </div>
+            <div class="carousel-caption">
+                <h3>Képaláírás</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img class="d-block w-100" [src]="images[1]" alt="Random third slide" />
+            </div>
+            <div class="carousel-caption">
+                <h3>Képaláírás</h3>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="d-flex justify-content-center">
+                <img
+                    class="d-block"
+                    style="max-height: 630px"
+                    src="https://picsum.photos/id/984/720/1280"
+                    alt="Random first slide"
+                />
+            </div>
+            <div class="carousel-caption">
+                <h3>Képaláírás</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="d-flex justify-content-center">
+                <img
+                    class="d-block"
+                    style="max-height: 630px"
+                    src="https://picsum.photos/id/944/720/1280"
+                    alt="Random first slide"
+                />
+                <img
+                    class="d-block"
+                    style="max-height: 630px"
+                    src="https://picsum.photos/id/1011/720/1280"
+                    alt="Random first slide"
+                />
+                <img
+                    class="d-block"
+                    style="max-height: 630px"
+                    src="https://picsum.photos/id/984/720/1280"
+                    alt="Random first slide"
+                />
+            </div>
+            <div class="carousel-caption">
+                <h3>Képaláírás</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</section>
+<section class="container container-small">
+    <h2 class="mt-120 mb-64">Munkahely 1</h2>
+    <div class="mb-64">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora consequatur itaque quibusdam voluptatem enim
+        atque blanditiis at modi provident nam officia, dolor quas. Maxime quam deserunt ad repudiandae, ut facilis?
+    </div>
+    <ngb-carousel *ngIf="images" style="background-color: gray">
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img class="d-block w-100" [src]="images[0]" alt="Random second slide" />
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img class="d-block w-100" [src]="images[1]" alt="Random third slide" />
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="d-flex justify-content-center">
+                <img class="d-block w-100" [src]="images[2]" alt="Random first slide" />
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</section>
+<section class="container container-small">
+    <h2 class="mt-120 mb-64">Munkahely 2</h2>
+    <div class="mb-64">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora consequatur itaque quibusdam voluptatem enim
+        atque blanditiis at modi provident nam officia, dolor quas. Maxime quam deserunt ad repudiandae, ut facilis?
+    </div>
+    <ngb-carousel *ngIf="images" style="background-color: gray">
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img class="d-block w-100" [src]="images[0]" alt="Random third slide" />
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img class="d-block w-100" [src]="images[1]" alt="Random third slide" />
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="d-flex justify-content-center">
+                <img class="d-block w-100" [src]="images[2]" alt="Random first slide" />
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</section>
+<app-work-together></app-work-together>

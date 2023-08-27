@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from '../shared/shared.module';
 import { AboutUsPageComponent } from './components/about-us-page/about-us-page.component';
 import { ActivitiesPageComponent } from './components/activities-page/activities-page.component';
@@ -17,6 +17,6 @@ import { ReferencesPageComponent } from './components/references-page/references
         GalleryPageComponent,
         ReferencesPageComponent,
     ],
-    imports: [CommonModule, SharedModule, NgbTooltipModule],
+    imports: [CommonModule, SharedModule, NgbTooltipModule, NgbCarouselModule],
 })
 export class PagesModule {}

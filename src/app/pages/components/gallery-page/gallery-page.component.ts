@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { City } from '../../interfaces/city';
 
 @Component({
     selector: 'app-gallery-page',
@@ -8,5 +7,5 @@ import { City } from '../../interfaces/city';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GalleryPageComponent {
-    cities: City[] = new Array<City>(11).fill({ name: 'Debrecen', company: 'Coca Cola' });
+    images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/1280/720`);
 }
