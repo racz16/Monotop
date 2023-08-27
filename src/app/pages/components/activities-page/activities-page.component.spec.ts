@@ -24,9 +24,9 @@ describe('ActivitiesPageComponent', () => {
     });
 
     it('should display the header', () => {
-        const h2: HTMLHeadingElement = fixture.nativeElement.querySelector('h2');
-        expect(h2).toBeTruthy();
-        expect(h2.textContent).toBe('Tevékenységeink');
+        const h1: HTMLHeadingElement = fixture.nativeElement.querySelector('h1');
+        expect(h1).toBeTruthy();
+        expect(h1.textContent).toBe('Tevékenységeink');
     });
 
     it('should display the 1st list box', () => {
