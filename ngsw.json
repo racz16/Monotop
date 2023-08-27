@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1692560202254,
+  "timestamp": 1693180222466,
   "index": "/Monotop/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/Monotop/assets/logos/logo.svg",
         "/Monotop/index.html",
-        "/Monotop/main.143d0c651f8c9d23.js",
+        "/Monotop/main.2e6e9f72d5c7dd88.js",
         "/Monotop/manifest.webmanifest",
         "/Monotop/polyfills.56233e4eeb75a32d.js",
         "/Monotop/runtime.35494deeadb9e5c7.js",
-        "/Monotop/styles.0b7af6b5010bd64c.css"
+        "/Monotop/styles.f8a57994c1489a82.css"
       ],
       "patterns": []
     },
@@ -29,9 +29,6 @@
         "ignoreVary": true
       },
       "urls": [
-        "/Monotop/about-us.a8991bc696e8aa02.jpg",
-        "/Monotop/activities.8a5e3c04795cdcb4.jpg",
-        "/Monotop/assets/about-us-page/about-us.jpg",
         "/Monotop/assets/about-us-page/ddc-logo.avif",
         "/Monotop/assets/about-us-page/ddc-logo.jpg",
         "/Monotop/assets/about-us-page/ddc-logo.webp",
@@ -42,18 +39,16 @@
         "/Monotop/assets/about-us-page/durostone-logo.jpg",
         "/Monotop/assets/about-us-page/durostone-logo.webp",
         "/Monotop/assets/about-us-page/grh-logo.svg",
-        "/Monotop/assets/about-us-page/hungary-map.svg",
         "/Monotop/assets/about-us-page/mmi-atlas-logo.avif",
         "/Monotop/assets/about-us-page/mmi-atlas-logo.jpg",
         "/Monotop/assets/about-us-page/mmi-atlas-logo.webp",
-        "/Monotop/assets/activities-page/activities.jpg",
-        "/Monotop/assets/activities-page/alaplemez.jpg",
-        "/Monotop/assets/activities-page/aljzatbeton.jpg",
-        "/Monotop/assets/activities-page/felbeton.jpg",
-        "/Monotop/assets/activities-page/felujitas.jpg",
-        "/Monotop/assets/activities-page/nagytablas.jpg",
-        "/Monotop/assets/activities-page/terbeton.jpg",
-        "/Monotop/assets/activities-page/vagott.jpg",
+        "/Monotop/assets/activities-page/alaplemez.webp",
+        "/Monotop/assets/activities-page/aljzatbeton.webp",
+        "/Monotop/assets/activities-page/felbeton.webp",
+        "/Monotop/assets/activities-page/felujitas.webp",
+        "/Monotop/assets/activities-page/nagytablas.webp",
+        "/Monotop/assets/activities-page/terbeton.webp",
+        "/Monotop/assets/activities-page/vagott.webp",
         "/Monotop/assets/link-button-icons/arrow-right.svg",
         "/Monotop/assets/link-button-icons/envelope.svg",
         "/Monotop/assets/logos/favicon.png",
@@ -71,16 +66,14 @@
         "/Monotop/assets/main-page/main-2-535.webp",
         "/Monotop/assets/main-page/main-2-840.avif",
         "/Monotop/assets/main-page/main-2-840.jpg",
-        "/Monotop/assets/main-page/main-2-840.webp"
+        "/Monotop/assets/main-page/main-2-840.webp",
+        "/Monotop/assets/references-page/hungary-map.svg"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/Monotop/about-us.a8991bc696e8aa02.jpg": "2a4564f3a4025d13c887afe5ed180b3735f518d7",
-    "/Monotop/activities.8a5e3c04795cdcb4.jpg": "4dbd5ddc4596bab643e8d6e164e594b2298e1685",
-    "/Monotop/assets/about-us-page/about-us.jpg": "2a4564f3a4025d13c887afe5ed180b3735f518d7",
     "/Monotop/assets/about-us-page/ddc-logo.avif": "ffa769d1ff0e62e2324f0837f930f102b2d13e35",
     "/Monotop/assets/about-us-page/ddc-logo.jpg": "4859d24dc516b6c23665a6916c446c27f904a5c9",
     "/Monotop/assets/about-us-page/ddc-logo.webp": "a70b8e754ad4dfca728dd8f8dbd38aded155e52f",
@@ -91,18 +84,16 @@
     "/Monotop/assets/about-us-page/durostone-logo.jpg": "d44d3afdbc4dad3fe457b2d76bfa81e65dfe5650",
     "/Monotop/assets/about-us-page/durostone-logo.webp": "bc15ff4082e814674eaae5ef7adc27ba92bc8a72",
     "/Monotop/assets/about-us-page/grh-logo.svg": "4cc7cf8179d100bb8b071c6c009b886d17e079b4",
-    "/Monotop/assets/about-us-page/hungary-map.svg": "ae0f6350a8d18aecd34e6cb3e027bcf280dd7942",
     "/Monotop/assets/about-us-page/mmi-atlas-logo.avif": "5ae2d5dc4416631519bdd5b88884c9d1a234d03f",
     "/Monotop/assets/about-us-page/mmi-atlas-logo.jpg": "09188f1a99a36f26d98c3a589164a33a50d0f2c4",
     "/Monotop/assets/about-us-page/mmi-atlas-logo.webp": "510c61f8e1bc7381c1182d2231b498f9a50486ec",
-    "/Monotop/assets/activities-page/activities.jpg": "4dbd5ddc4596bab643e8d6e164e594b2298e1685",
-    "/Monotop/assets/activities-page/alaplemez.jpg": "8cbcc19fc9b462d54075b409037f5a73ffe44ce4",
-    "/Monotop/assets/activities-page/aljzatbeton.jpg": "a58423da214c44bcba06966becc5ea04df159390",
-    "/Monotop/assets/activities-page/felbeton.jpg": "ac4f8f51a5d23f854e6abb2a5924922840e54c2d",
-    "/Monotop/assets/activities-page/felujitas.jpg": "60bf6dd575e20c15775d596916b506820fc7afb1",
-    "/Monotop/assets/activities-page/nagytablas.jpg": "5ec2bc1a6bbe604feb0e161df265521873526a74",
-    "/Monotop/assets/activities-page/terbeton.jpg": "737651b36d4f47fd2fe2452de1543a7649f52a49",
-    "/Monotop/assets/activities-page/vagott.jpg": "546ff7cbc43ec6de64bcb42222980fb67d2443c9",
+    "/Monotop/assets/activities-page/alaplemez.webp": "5b51fb44f68ccf68aa2496d2027c1b569c793295",
+    "/Monotop/assets/activities-page/aljzatbeton.webp": "3913405271cbe38c27ded6b30888723ae58847bd",
+    "/Monotop/assets/activities-page/felbeton.webp": "b1869a777ea88a5ca9ac09efbd8cdb2879e4f046",
+    "/Monotop/assets/activities-page/felujitas.webp": "934260bf79eccd83f90594f5ceeb138dbd509633",
+    "/Monotop/assets/activities-page/nagytablas.webp": "2ca747f5e53f8a3f0e78f7234f8dcc237abeb0b6",
+    "/Monotop/assets/activities-page/terbeton.webp": "33fb3c76c9c971711a39eec5810841ad9f33d9b9",
+    "/Monotop/assets/activities-page/vagott.webp": "d5216c2c57885b1f422f6a06d387bf6793d18204",
     "/Monotop/assets/link-button-icons/arrow-right.svg": "af470bf999977a5c4088da5c380a4ad949274dc1",
     "/Monotop/assets/link-button-icons/envelope.svg": "053454379feb917705e67bca4e5041293c156283",
     "/Monotop/assets/logos/favicon.png": "1b50f5b5644a5566c7ec7f5b5779f3bffadd3a39",
@@ -122,12 +113,13 @@
     "/Monotop/assets/main-page/main-2-840.avif": "7b860db296fe2db0e52efed34cc148a1434ac452",
     "/Monotop/assets/main-page/main-2-840.jpg": "76316408c9874738dd69ec306f63ea79670275ce",
     "/Monotop/assets/main-page/main-2-840.webp": "6474af05d8afbc670891b0c5d2e2d411915bdac5",
-    "/Monotop/index.html": "e2928524c44da004b9a8aa5198892eed91fa0245",
-    "/Monotop/main.143d0c651f8c9d23.js": "52bec4f3800168f4f4c99621acf6cef497525683",
+    "/Monotop/assets/references-page/hungary-map.svg": "ae0f6350a8d18aecd34e6cb3e027bcf280dd7942",
+    "/Monotop/index.html": "877f6a9f413187cbaaa814591fe0a465ffc20a39",
+    "/Monotop/main.2e6e9f72d5c7dd88.js": "ec62d4d2df391fa2dea0694ef8f27e646d57c2a8",
     "/Monotop/manifest.webmanifest": "1ef7d4661a47531e5c756c67a548b1896baf1622",
     "/Monotop/polyfills.56233e4eeb75a32d.js": "847cf4d57c65c573daaf596891d3ded06219296b",
     "/Monotop/runtime.35494deeadb9e5c7.js": "a2364d7cbd3e576798949c1074b9bb253f3c902c",
-    "/Monotop/styles.0b7af6b5010bd64c.css": "9b0eb6c0714e458976cc2d7f5c9036ba8598d67f"
+    "/Monotop/styles.f8a57994c1489a82.css": "aa716013f5a28bd0d3794fcc014225d941b8d39c"
   },
   "navigationUrls": [
     {
