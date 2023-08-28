@@ -19,6 +19,7 @@
         "prettier-lint": "prettier --check .",
         "prettier-format": "prettier --write .",
         "eslint": "ng lint",
+        "deploy-demo": "ng deploy --build-target=Monotop:build:demo",
         "prepare": "husky install"
     },
     "private": true,

@@ -54,6 +54,32 @@
                                 }
                             }
                         },
+                        "demo": {
+                            "budgets": [
+                                {
+                                    "type": "initial",
+                                    "maximumWarning": "500kb",
+                                    "maximumError": "1mb"
+                                },
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "2kb",
+                                    "maximumError": "4kb"
+                                }
+                            ],
+                            "outputHashing": "all",
+                            "optimization": {
+                                "styles": {
+                                    "inlineCritical": false
+                                }
+                            },
+                            "fileReplacements": [
+                                {
+                                    "replace": "src/environments/environment.ts",
+                                    "with": "src/environments/environment.demo.ts"
+                                }
+                            ]
+                        },
                         "development": {
                             "buildOptimizer": false,
                             "optimization": false,
@@ -76,6 +102,9 @@
                     "configurations": {
                         "production": {
                             "browserTarget": "Monotop:build:production"
+                        },
+                        "demo": {
+                            "browserTarget": "Monotop:build:demo"
                         },
                         "development": {
                             "browserTarget": "Monotop:build:development"

@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { RoutingService } from '../../services/routing.service';
 
 @Component({
@@ -8,5 +9,7 @@ import { RoutingService } from '../../services/routing.service';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent {
+    environment = environment;
+
     constructor(public rs: RoutingService) {}
 }

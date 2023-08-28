@@ -10,7 +10,6 @@ import { RoutingService } from '../../services/routing.service';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavbarComponent {
-    environment = environment;
     isMenuCollapsed = true;
     menuItems: MenuItem[] = [
         {
@@ -27,11 +26,11 @@ export class NavbarComponent {
         },
         {
             name: 'Referenciák',
-            path: environment.production ? undefined : 'referenciak',
+            path: environment.configuration === 'production' ? undefined : 'referenciak',
         },
         {
             name: 'Galéria',
-            path: environment.production ? undefined : 'galeria',
+            path: environment.configuration === 'production' ? undefined : 'galeria',
         },
         {
             name: 'Kapcsolat',

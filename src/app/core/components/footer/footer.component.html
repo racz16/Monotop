@@ -1,4 +1,7 @@
-<footer class="text-white">
+<footer class="position-relative text-white">
+    <span *ngIf="environment.configuration !== 'production'" class="position-absolute text-white bottom-0 end-0">
+        {{ environment.configuration }}
+    </span>
     <div *ngIf="(rs.isContactPageOpened$ | async) === false" class="footer-extended d-flex">
         <address class="container container-small mt-120 mb-120">
             <div class="row">
