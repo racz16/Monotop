@@ -5,6 +5,7 @@
 ## Technologies
 
 ### Angular
+
 * Angular 16
 * OnPush change detection
 * Progressive Web App
@@ -20,12 +21,14 @@
   * routing, `routerLink` and `RouterLinkActive`
 
 ### TypeScript
+
 * everything typed, strict mode
 * get and set properties
 * operators like `...`, `??` and `?.`
 * type narrowing
 
 ### SCSS
+
 * responsive design, media queries
 * customized Bootstrap 5
 * SASS variables, mixins, nesting, `&`
@@ -36,6 +39,7 @@
 * pseudo-classes like `:hover`, `:active`, `:after`
 
 ### HTML
+
 * semantic HTML tags like `main`, `nav`, `footer`, `address`, etc.
 * modern image formats like AVIF and WEBP with JPG fallback
 * responsive images (loading different images based on size)
@@ -49,6 +53,7 @@
 * lazy loading
 
 ### CI pipeline
+
 * GitHub Actions
 * runs static analysis tools
 * runs unit tests
@@ -56,15 +61,18 @@
 * pull requests are only mergeable if successful
 
 ### CD pipeline
+
 * GitHub Actions
 * deploys to GitHub Pages
 
 ### Static analysis tools
+
 * ESLint
 * Prettier
 * Stylelint
 
 ### Formatting
+
 * Prettier
 * EditorConfig
 * ordering imports
