@@ -1,9 +1,9 @@
 /// <reference types="@angular/localize" />
 
 import { AppComponent } from './app/app.component';
-import { isDevMode, importProvidersFrom } from '@angular/core';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+import { isDevMode } from '@angular/core';
+import { provideServiceWorker } from '@angular/service-worker';
+import { bootstrapApplication } from '@angular/platform-browser';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { AboutUsPageComponent } from './app/pages/components/about-us-page/about-us-page.component';
 import { ActivitiesPageComponent } from './app/pages/components/activities-page/activities-page.component';
@@ -14,15 +14,12 @@ import { ReferencesPageComponent } from './app/pages/components/references-page/
 
 bootstrapApplication(AppComponent, {
     providers: [
-        importProvidersFrom(
-            BrowserModule,
-            ServiceWorkerModule.register('ngsw-worker.js', {
-                enabled: !isDevMode(),
-                // Register the ServiceWorker as soon as the application is stable
-                // or after 30 seconds (whichever comes first).
-                registrationStrategy: 'registerWhenStable:30000',
-            })
-        ),
+        provideServiceWorker('ngsw-worker.js', {
+            enabled: !isDevMode(),
+            // Register the ServiceWorker as soon as the application is stable
+            // or after 30 seconds (whichever comes first).
+            registrationStrategy: 'registerWhenStable:30000',
+        }),
         provideRouter(
             [
                 {
