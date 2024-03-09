@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { NgbTooltip } from '@ng-bootstrap/ng-bootstrap';
 import { ReferencesPageComponent } from './references-page.component';
 
 describe('ReferencesPageComponent', () => {
@@ -10,8 +9,7 @@ describe('ReferencesPageComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [ReferencesPageComponent],
-            imports: [SharedModule, NgbTooltipModule],
+            imports: [NgbTooltip, ReferencesPageComponent],
         });
         fixture = TestBed.createComponent(ReferencesPageComponent);
         component = fixture.componentInstance;

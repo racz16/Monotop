@@ -5,6 +5,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
     templateUrl: './list-box.component.html',
     styleUrls: ['./list-box.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
 })
 export class ListBoxComponent {
     @Input({ required: true }) headerTitle = '';

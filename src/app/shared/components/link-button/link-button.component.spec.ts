@@ -6,6 +6,8 @@ import { LinkButtonComponent } from './link-button.component';
 
 @Component({
     template: '<app-link-button>Test text content</app-link-button>',
+    standalone: true,
+    imports: [RouterTestingModule, LinkButtonComponent],
 })
 class TestHostComponent {}
 
@@ -15,8 +17,7 @@ describe('LinkButtonComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [LinkButtonComponent, TestHostComponent],
-            imports: [RouterTestingModule],
+            imports: [RouterTestingModule, LinkButtonComponent, TestHostComponent],
         });
         fixture = TestBed.createComponent(LinkButtonComponent);
         component = fixture.componentInstance;

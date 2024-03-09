@@ -8,8 +8,9 @@
 
 * Angular 17
 * OnPush change detection
+* using the `@if`, and `@for` template syntaxes
+* standalone components
 * Progressive Web App
-* using the @if, and @for template syntaxes
 * Karma / Jasmine unit test
 * ng-bootstrap
 * regular Angular

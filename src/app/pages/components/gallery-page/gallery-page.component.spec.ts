@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { NgbCarousel, NgbSlide } from '@ng-bootstrap/ng-bootstrap';
 import { GalleryPageComponent } from './gallery-page.component';
 
 describe('GalleryPageComponent', () => {
@@ -10,8 +9,7 @@ describe('GalleryPageComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [GalleryPageComponent],
-            imports: [SharedModule, NgbCarouselModule],
+            imports: [NgbCarousel, NgbSlide, GalleryPageComponent],
         });
         fixture = TestBed.createComponent(GalleryPageComponent);
         component = fixture.componentInstance;

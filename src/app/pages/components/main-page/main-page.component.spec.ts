@@ -4,8 +4,8 @@ import { By } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 import { DotsComponent } from 'src/app/shared/components/dots/dots.component';
 import { WorkTogetherComponent } from 'src/app/shared/components/work-together/work-together.component';
-import { SharedModule } from 'src/app/shared/shared.module';
 import { MainPageComponent } from './main-page.component';
+import { LinkButtonComponent } from 'src/app/shared/components/link-button/link-button.component';
 
 describe('MainPageComponent', () => {
     let component: MainPageComponent;
@@ -13,8 +13,13 @@ describe('MainPageComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [MainPageComponent],
-            imports: [SharedModule, RouterTestingModule],
+            imports: [
+                LinkButtonComponent,
+                DotsComponent,
+                WorkTogetherComponent,
+                RouterTestingModule,
+                MainPageComponent,
+            ],
         });
         jasmine.clock().install();
         jasmine.clock().mockDate(new Date('2025-05-12'));

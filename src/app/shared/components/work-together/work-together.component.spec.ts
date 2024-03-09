@@ -11,7 +11,7 @@ describe('WorkTogetherComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [WorkTogetherComponent, LinkButtonComponent, DotsComponent],
+            imports: [WorkTogetherComponent, LinkButtonComponent, DotsComponent],
         });
         fixture = TestBed.createComponent(WorkTogetherComponent);
         component = fixture.componentInstance;

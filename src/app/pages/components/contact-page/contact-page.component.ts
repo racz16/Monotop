@@ -6,6 +6,7 @@ import { RoutingService } from 'src/app/core/services/routing.service';
     templateUrl: './contact-page.component.html',
     styleUrls: ['./contact-page.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
 })
 export class ContactPageComponent {
     constructor(rs: RoutingService) {

@@ -15,8 +15,7 @@ describe('FooterComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [FooterComponent],
-            imports: [RouterTestingModule.withRoutes([])],
+            imports: [RouterTestingModule.withRoutes([]), FooterComponent],
             providers: [{ provide: Router, useValue: mockRouter }],
         });
         fixture = TestBed.createComponent(FooterComponent);

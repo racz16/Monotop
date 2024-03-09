@@ -2,8 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { By } from '@angular/platform-browser';
 import { ListBoxComponent } from 'src/app/shared/components/list-box/list-box.component';
-import { SharedModule } from 'src/app/shared/shared.module';
 import { ActivitiesPageComponent } from './activities-page.component';
+import { WorkTogetherComponent } from 'src/app/shared/components/work-together/work-together.component';
 
 describe('ActivitiesPageComponent', () => {
     let component: ActivitiesPageComponent;
@@ -11,8 +11,7 @@ describe('ActivitiesPageComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [ActivitiesPageComponent],
-            imports: [SharedModule],
+            imports: [ListBoxComponent, WorkTogetherComponent, ActivitiesPageComponent],
         });
         fixture = TestBed.createComponent(ActivitiesPageComponent);
         component = fixture.componentInstance;

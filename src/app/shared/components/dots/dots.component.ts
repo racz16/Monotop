@@ -6,6 +6,7 @@ import { Rectangle } from '../../interfaces/rectangle';
     templateUrl: './dots.component.html',
     styleUrls: ['./dots.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
 })
 export class DotsComponent {
     @Input() emptyColor = 'transparent';

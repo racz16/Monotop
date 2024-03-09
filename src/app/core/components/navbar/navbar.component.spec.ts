@@ -10,8 +10,7 @@ describe('NavbarComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [NavbarComponent],
-            imports: [NgbCollapseModule, RouterTestingModule],
+            imports: [NgbCollapseModule, RouterTestingModule, NavbarComponent],
         });
         fixture = TestBed.createComponent(NavbarComponent);
         component = fixture.componentInstance;
