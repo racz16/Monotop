@@ -9,9 +9,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 export class LinkButtonComponent {
     @Input() link = '';
     @Input() isExternal = false;
-    @Input() svgIcon?: string;
-
-    get iconSrc(): string {
-        return `assets/link-button-icons/${this.svgIcon}.svg`;
-    }
+    // related GitHub issue: https://github.com/angular-eslint/angular-eslint/issues/1120#issuecomment-1863327538
+    // eslint-disable-next-line @angular-eslint/no-input-rename
+    @Input({ transform: (value: string) => `assets/link-button-icons/${value}.svg` }) svgIcon?: string;
 }

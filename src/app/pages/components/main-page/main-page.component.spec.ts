@@ -46,7 +46,7 @@ describe('MainPageComponent', () => {
         expect(link).toBeTruthy();
         const linkComponent = link.componentInstance;
         expect(linkComponent).toBeTruthy();
-        expect(linkComponent.svgIcon).toBe('arrow-right');
+        expect(linkComponent.svgIcon).toBe('assets/link-button-icons/arrow-right.svg');
         expect(linkComponent.link).toBe('/tevekenysegek');
         expect(linkComponent.isExternal).toBe(false);
         expect(link.nativeElement).toBeTruthy();
