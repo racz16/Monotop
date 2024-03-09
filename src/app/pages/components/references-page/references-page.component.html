@@ -16,20 +16,21 @@
                 width="972"
                 height="600"
             />
-            <div
-                *ngFor="let city of cities; let i = index"
-                class="position-absolute rounded-circle city"
-                [class]="'city-' + (i + 1)"
-                placement="top"
-                [ngbTooltip]="tooltipTemplate"
-            >
-                <ng-template #tooltipTemplate>
-                    <div class="d-flex flex-column align-items-start">
-                        <div class="tooltip-title">{{ city.company }}</div>
-                        <div class="tooltip-text">{{ city.name }}</div>
-                    </div>
-                </ng-template>
-            </div>
+            @for (city of cities; track city; let i = $index) {
+                <div
+                    class="position-absolute rounded-circle city"
+                    [class]="'city-' + (i + 1)"
+                    placement="top"
+                    [ngbTooltip]="tooltipTemplate"
+                >
+                    <ng-template #tooltipTemplate>
+                        <div class="d-flex flex-column align-items-start">
+                            <div class="tooltip-title">{{ city.company }}</div>
+                            <div class="tooltip-text">{{ city.name }}</div>
+                        </div>
+                    </ng-template>
+                </div>
+            }
         </figure>
     </div>
 </section>

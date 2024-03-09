@@ -1,9 +1,9 @@
 <div class="d-inline-flex flex-column dots-container">
-    <div *ngFor="let y of getRowIndices()" class="d-inline-flex dot-row">
-        <div
-            *ngFor="let x of getColumnIndices()"
-            class="d-inline-block rounded-circle dot"
-            [style.backgroundColor]="getColor(x, y)"
-        ></div>
-    </div>
+    @for (y of getRowIndices(); track y) {
+        <div class="d-inline-flex dot-row">
+            @for (x of getColumnIndices(); track x) {
+                <div class="d-inline-block rounded-circle dot" [style.backgroundColor]="getColor(x, y)"></div>
+            }
+        </div>
+    }
 </div>

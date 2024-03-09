@@ -1,11 +1,16 @@
-<a *ngIf="!isExternal" [routerLink]="link"> <ng-container *ngTemplateOutlet="buttonContent"></ng-container></a>
-<a *ngIf="isExternal" [href]="link"> <ng-container *ngTemplateOutlet="buttonContent"></ng-container></a>
+@if (isExternal) {
+    <a [href]="link"> <ng-container *ngTemplateOutlet="buttonContent"></ng-container></a>
+} @else {
+    <a [routerLink]="link"> <ng-container *ngTemplateOutlet="buttonContent"></ng-container></a>
+}
 
 <ng-template #buttonContent>
     <div class="d-flex align-items-center">
         <div class="text-white content">
             <ng-content></ng-content>
         </div>
-        <img *ngIf="svgIcon" width="32" height="32" [src]="iconSrc" alt="" />
+        @if (svgIcon) {
+            <img width="32" height="32" [src]="iconSrc" alt="" />
+        }
     </div>
 </ng-template>
