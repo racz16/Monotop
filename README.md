@@ -6,16 +6,16 @@
 
 ### Angular
 
-* Angular 16
+* Angular 17
 * OnPush change detection
 * Progressive Web App
+* using the @if, and @for template syntaxes
 * Karma / Jasmine unit test
 * ng-bootstrap
 * regular Angular
   * components
   * data binding, events, async pipe
   * `ng-template`, `ng-content`
-  * directives like `*ngIf` and `*ngFor`
   * services
   * RxJS `Observable`s, operators like `filter`, `map`, etc.
   * routing, `routerLink` and `RouterLinkActive`
