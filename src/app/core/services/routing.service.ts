@@ -10,7 +10,10 @@ export class RoutingService {
     isContactPageOpened$: Observable<boolean>;
     currentUrl$: Observable<string>;
 
-    constructor(private router: Router, private titleService: Title) {
+    constructor(
+        private router: Router,
+        private titleService: Title
+    ) {
         const navigationEnd$ = this.router.events.pipe(
             filter((e) => e.type === EventType.NavigationEnd),
             map((e) => e as NavigationEnd)
