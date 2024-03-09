@@ -7,7 +7,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ListBoxComponent {
-    @Input() headerTitle = '';
+    @Input({ required: true }) headerTitle = '';
     @Input() headerBackgroundImagePath = '';
 
     get backgroundPath(): string {

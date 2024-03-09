@@ -13,7 +13,7 @@
 * Karma / Jasmine unit test
 * ng-bootstrap
 * regular Angular
-  * components, using the @Input's transform option
+  * components, using the @Input's transform, and required options
   * data binding, events, async pipe
   * `ng-template`, `ng-content`
   * services

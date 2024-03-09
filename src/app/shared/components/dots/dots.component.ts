@@ -11,7 +11,7 @@ export class DotsComponent {
     @Input() emptyColor = 'transparent';
     @Input() normalColor = '#62e067';
     @Input() intersectionColor = '#555f6733';
-    @Input() rectangles: Rectangle[] = [];
+    @Input({ required: true }) rectangles: Rectangle[] = [];
 
     getColumnIndices(): number[] {
         const rectangles = this.getValidRectangles();
