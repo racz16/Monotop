@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1696379105334,
+  "timestamp": 1710113942621,
   "index": "/Monotop/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/Monotop/assets/logos/logo.svg",
         "/Monotop/index.html",
-        "/Monotop/main.2e6e9f72d5c7dd88.js",
+        "/Monotop/main.84e3db353056e79e.js",
         "/Monotop/manifest.webmanifest",
-        "/Monotop/polyfills.56233e4eeb75a32d.js",
-        "/Monotop/runtime.35494deeadb9e5c7.js",
-        "/Monotop/styles.f8a57994c1489a82.css"
+        "/Monotop/polyfills.61f765180916d323.js",
+        "/Monotop/runtime.247782a2a85bd042.js",
+        "/Monotop/styles.1a65b42fd9f43627.css"
       ],
       "patterns": []
     },
@@ -83,7 +83,7 @@
     "/Monotop/assets/about-us-page/durostone-logo.avif": "cadf30605e676ff2a1e136fe3a709b06ac20d764",
     "/Monotop/assets/about-us-page/durostone-logo.jpg": "d44d3afdbc4dad3fe457b2d76bfa81e65dfe5650",
     "/Monotop/assets/about-us-page/durostone-logo.webp": "bc15ff4082e814674eaae5ef7adc27ba92bc8a72",
-    "/Monotop/assets/about-us-page/grh-logo.svg": "4cc7cf8179d100bb8b071c6c009b886d17e079b4",
+    "/Monotop/assets/about-us-page/grh-logo.svg": "87e8b47ac1355754d4f1dc075f9402285b94e8e2",
     "/Monotop/assets/about-us-page/mmi-atlas-logo.avif": "5ae2d5dc4416631519bdd5b88884c9d1a234d03f",
     "/Monotop/assets/about-us-page/mmi-atlas-logo.jpg": "09188f1a99a36f26d98c3a589164a33a50d0f2c4",
     "/Monotop/assets/about-us-page/mmi-atlas-logo.webp": "510c61f8e1bc7381c1182d2231b498f9a50486ec",
@@ -91,14 +91,14 @@
     "/Monotop/assets/activities-page/aljzatbeton.webp": "3913405271cbe38c27ded6b30888723ae58847bd",
     "/Monotop/assets/activities-page/felbeton.webp": "b1869a777ea88a5ca9ac09efbd8cdb2879e4f046",
     "/Monotop/assets/activities-page/felujitas.webp": "934260bf79eccd83f90594f5ceeb138dbd509633",
-    "/Monotop/assets/activities-page/nagytablas.webp": "2ca747f5e53f8a3f0e78f7234f8dcc237abeb0b6",
+    "/Monotop/assets/activities-page/nagytablas.webp": "d5216c2c57885b1f422f6a06d387bf6793d18204",
     "/Monotop/assets/activities-page/terbeton.webp": "33fb3c76c9c971711a39eec5810841ad9f33d9b9",
-    "/Monotop/assets/activities-page/vagott.webp": "d5216c2c57885b1f422f6a06d387bf6793d18204",
-    "/Monotop/assets/link-button-icons/arrow-right.svg": "af470bf999977a5c4088da5c380a4ad949274dc1",
-    "/Monotop/assets/link-button-icons/envelope.svg": "053454379feb917705e67bca4e5041293c156283",
+    "/Monotop/assets/activities-page/vagott.webp": "2ca747f5e53f8a3f0e78f7234f8dcc237abeb0b6",
+    "/Monotop/assets/link-button-icons/arrow-right.svg": "89601a56ab2f3a7da1336883778c88117bb26b48",
+    "/Monotop/assets/link-button-icons/envelope.svg": "d85bab4c1faf4fd4fb6b75ab1f8ebb12444d34de",
     "/Monotop/assets/logos/favicon.png": "1b50f5b5644a5566c7ec7f5b5779f3bffadd3a39",
     "/Monotop/assets/logos/favicon.svg": "47acddd91747ebe564823f58183e46838e592337",
-    "/Monotop/assets/logos/logo.svg": "965df3c87a264794a1d3ecd0ab2d47c53d681b5b",
+    "/Monotop/assets/logos/logo.svg": "029c62637c47ebe0fc50b9f0d0719d9332c8e015",
     "/Monotop/assets/logos/maskable-logo-192.png": "9817a2b6b7066b8314fad2500c77bc23e12fdbb7",
     "/Monotop/assets/logos/maskable-logo-512.png": "5e58cab944107e55a8176f4348f507855d18b848",
     "/Monotop/assets/logos/maskable-logo-72.png": "0e0b51e18249bbe6cd48f5e726338e0b20ce4ac6",
@@ -113,13 +113,13 @@
     "/Monotop/assets/main-page/main-2-840.avif": "7b860db296fe2db0e52efed34cc148a1434ac452",
     "/Monotop/assets/main-page/main-2-840.jpg": "76316408c9874738dd69ec306f63ea79670275ce",
     "/Monotop/assets/main-page/main-2-840.webp": "6474af05d8afbc670891b0c5d2e2d411915bdac5",
-    "/Monotop/assets/references-page/hungary-map.svg": "ae0f6350a8d18aecd34e6cb3e027bcf280dd7942",
-    "/Monotop/index.html": "61a5cb58589606a1a11be2d344043a196f9cd27f",
-    "/Monotop/main.2e6e9f72d5c7dd88.js": "ec62d4d2df391fa2dea0694ef8f27e646d57c2a8",
+    "/Monotop/assets/references-page/hungary-map.svg": "3882f95ab1c1c7da647d387ba6a773e614823567",
+    "/Monotop/index.html": "68953566194cfcf5fdf674390723555522efbf0e",
+    "/Monotop/main.84e3db353056e79e.js": "bad45dcf963949136e25f6cf8214b271621cd55e",
     "/Monotop/manifest.webmanifest": "1ef7d4661a47531e5c756c67a548b1896baf1622",
-    "/Monotop/polyfills.56233e4eeb75a32d.js": "847cf4d57c65c573daaf596891d3ded06219296b",
-    "/Monotop/runtime.35494deeadb9e5c7.js": "a2364d7cbd3e576798949c1074b9bb253f3c902c",
-    "/Monotop/styles.f8a57994c1489a82.css": "aa716013f5a28bd0d3794fcc014225d941b8d39c"
+    "/Monotop/polyfills.61f765180916d323.js": "defafb039a6a129d77586e820c78edb998431dc2",
+    "/Monotop/runtime.247782a2a85bd042.js": "761d415623f26f33dcb55a10ec660322f17aaacc",
+    "/Monotop/styles.1a65b42fd9f43627.css": "808c2fcb1245c8f7a7071812db01e9bb966f3d2d"
   },
   "navigationUrls": [
     {
