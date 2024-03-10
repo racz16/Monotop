@@ -1,10 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { By } from '@angular/platform-browser';
-import { RouterTestingModule } from '@angular/router/testing';
+
 import { AboutUsPageComponent } from './about-us-page.component';
 import { LinkButtonComponent } from 'src/app/shared/components/link-button/link-button.component';
 import { WorkTogetherComponent } from 'src/app/shared/components/work-together/work-together.component';
+import { provideRouter } from '@angular/router';
 
 describe('AboutUsPageComponent', () => {
     let component: AboutUsPageComponent;
@@ -12,7 +12,8 @@ describe('AboutUsPageComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [RouterTestingModule, LinkButtonComponent, WorkTogetherComponent, AboutUsPageComponent],
+            imports: [LinkButtonComponent, WorkTogetherComponent, AboutUsPageComponent],
+            providers: [provideRouter([])],
         });
         fixture = TestBed.createComponent(AboutUsPageComponent);
         component = fixture.componentInstance;

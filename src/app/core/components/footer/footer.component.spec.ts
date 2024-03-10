@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { NavigationEnd, Router } from '@angular/router';
-import { RouterTestingModule } from '@angular/router/testing';
 import { Subject } from 'rxjs';
+
 import { FooterComponent } from './footer.component';
 
 describe('FooterComponent', () => {
@@ -15,7 +14,7 @@ describe('FooterComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [RouterTestingModule.withRoutes([]), FooterComponent],
+            imports: [FooterComponent],
             providers: [{ provide: Router, useValue: mockRouter }],
         });
         fixture = TestBed.createComponent(FooterComponent);
