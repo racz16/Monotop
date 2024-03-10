@@ -1,21 +1,22 @@
 # Monotop
 
-[Deployed website](https://monotop.hu/)
+[Deployed website](https://racz16.github.io/Monotop/)
 
 ## Technologies
 
 ### Angular
 
-* Angular 16
+* Angular 17
 * OnPush change detection
+* using the `@if`, and `@for` template syntaxes
+* standalone components
 * Progressive Web App
 * Karma / Jasmine unit test
 * ng-bootstrap
 * regular Angular
-  * components
+  * components, using the @Input's transform, and required options
   * data binding, events, async pipe
   * `ng-template`, `ng-content`
-  * directives like `*ngIf` and `*ngFor`
   * services
   * RxJS `Observable`s, operators like `filter`, `map`, etc.
   * routing, `routerLink` and `RouterLinkActive`

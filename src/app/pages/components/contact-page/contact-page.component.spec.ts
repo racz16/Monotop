@@ -8,7 +8,7 @@ describe('ContactPageComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [ContactPageComponent],
+            imports: [ContactPageComponent],
         });
         fixture = TestBed.createComponent(ContactPageComponent);
         component = fixture.componentInstance;
@@ -30,38 +30,35 @@ describe('ContactPageComponent', () => {
         expect(informations).toBeTruthy();
         expect(informations.length).toBe(4);
         expect(informations[0]?.textContent).toBe('1214 Budapest, II. Rákóczi Ferenc út 315.');
-        expect(informations[1]?.textContent).toBe('+36 1 2000 380');
+        expect(informations[1]?.textContent).toBe('+36 30 947 2080Rácz József');
         expect(informations[2]?.textContent).toBe('info@monotop.hu');
-        expect(informations[3]?.textContent).toBe('Adószám: 12134524-1-66');
+        expect(informations[3]?.textContent).toBe('Adószám: 13817215-2-43');
     });
 
     it('should display personal contact informations', () => {
-        const title: HTMLDivElement = fixture.nativeElement.querySelector('.people-title');
         const informations: NodeListOf<HTMLDivElement> = fixture.nativeElement.querySelectorAll('.people-text div');
         const informationLinks: NodeListOf<HTMLAnchorElement> =
             fixture.nativeElement.querySelectorAll('.people-text div a');
-        expect(title).toBeTruthy();
-        expect(title.textContent).toBe('Érdeklődés');
         expect(informations).toBeTruthy();
         expect(informations.length).toBe(4);
         expect(informationLinks).toBeTruthy();
         expect(informationLinks.length).toBe(4);
         expect(informations[0]?.textContent).toContain('Irodavezető');
-        expect(informations[0]?.textContent).toContain('Aradi Márta');
-        expect(informationLinks[0]?.textContent).toBe('+36 1 1234 5678');
-        expect(informationLinks[0]?.href).toBe('tel:+36 1 1234 5678');
+        expect(informations[0]?.textContent).toContain('Valulh Zsuzsanna');
+        expect(informationLinks[0]?.textContent).toBe('+36 30 470 0409');
+        expect(informationLinks[0]?.href).toBe('tel:+36 30 470 0409');
         expect(informations[1]?.textContent).toContain('Előkészítő ');
-        expect(informations[1]?.textContent).toContain('Vaulm Zsuzsanna');
-        expect(informationLinks[1]?.textContent).toBe('+36 1 1234 5678');
-        expect(informationLinks[1]?.href).toBe('tel:+36 1 1234 5678');
+        expect(informations[1]?.textContent).toContain('Aradi Márta');
+        expect(informationLinks[1]?.textContent).toBe('+36 30 680 2283');
+        expect(informationLinks[1]?.href).toBe('tel:+36 30 680 2283');
         expect(informations[2]?.textContent).toContain('Főépítésvezető ');
         expect(informations[2]?.textContent).toContain('Megyesi Zsolt');
-        expect(informationLinks[2]?.textContent).toBe('+36 1 1234 5678');
-        expect(informationLinks[2]?.href).toBe('tel:+36 1 1234 5678');
+        expect(informationLinks[2]?.textContent).toBe('+36 30 203 9224');
+        expect(informationLinks[2]?.href).toBe('tel:+36 30 203 9224');
         expect(informations[3]?.textContent).toContain('Építésvezető ');
         expect(informations[3]?.textContent).toContain('Szigeti Zoltán');
-        expect(informationLinks[3]?.textContent).toBe('+36 1 1234 5678');
-        expect(informationLinks[3]?.href).toBe('tel:+36 1 1234 5678');
+        expect(informationLinks[3]?.textContent).toBe('+36 30 314 8496');
+        expect(informationLinks[3]?.href).toBe('tel:+36 30 314 8496');
     });
 
     it('should display the map', () => {

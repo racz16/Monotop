@@ -6,30 +6,29 @@ import { Rectangle } from '../../interfaces/rectangle';
     templateUrl: './dots.component.html',
     styleUrls: ['./dots.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
 })
 export class DotsComponent {
     @Input() emptyColor = 'transparent';
     @Input() normalColor = '#62e067';
     @Input() intersectionColor = '#555f6733';
-    @Input() rectangles: Rectangle[] = [];
+    @Input({ required: true }) rectangles: Rectangle[] = [];
 
     getColumnIndices(): number[] {
         const rectangles = this.getValidRectangles();
-        const size = rectangles.length ? Math.max(...rectangles.map((rectangle) => rectangle.x + rectangle.width)) : 0;
+        const size = Math.max(0, ...rectangles.map((rectangle) => rectangle.x + rectangle.width));
         return this.getIndices(size);
     }
 
     getRowIndices(): number[] {
         const rectangles = this.getValidRectangles();
-        const size = rectangles.length ? Math.max(...rectangles.map((rectangle) => rectangle.y + rectangle.height)) : 0;
+        const size = Math.max(0, ...rectangles.map((rectangle) => rectangle.y + rectangle.height));
         return this.getIndices(size);
     }
 
     private getValidRectangles(): Rectangle[] {
-        return (
-            this.rectangles?.filter(
-                (rectangle) => rectangle.x >= 0 && rectangle.y >= 0 && rectangle.width > 0 && rectangle.height > 0
-            ) ?? []
+        return this.rectangles.filter(
+            (rectangle) => rectangle.x >= 0 && rectangle.y >= 0 && rectangle.width > 0 && rectangle.height > 0
         );
     }
 

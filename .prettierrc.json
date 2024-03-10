@@ -1,4 +1,5 @@
 {
+    "plugins": ["prettier-plugin-organize-imports"],
     "endOfLine": "lf",
     "tabWidth": 4,
     "singleQuote": true,

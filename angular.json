@@ -8,7 +8,8 @@
             "schematics": {
                 "@schematics/angular:component": {
                     "style": "scss",
-                    "changeDetection": "OnPush"
+                    "changeDetection": "OnPush",
+                    "standalone": true
                 }
             },
             "root": "",
@@ -75,10 +76,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "Monotop:build:production"
+                            "buildTarget": "Monotop:build:production"
                         },
                         "development": {
-                            "browserTarget": "Monotop:build:development"
+                            "buildTarget": "Monotop:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -86,7 +87,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "Monotop:build"
+                        "buildTarget": "Monotop:build"
                     }
                 },
                 "test": {

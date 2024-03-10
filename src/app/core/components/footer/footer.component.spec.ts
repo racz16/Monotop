@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { NavigationEnd, Router } from '@angular/router';
-import { RouterTestingModule } from '@angular/router/testing';
 import { Subject } from 'rxjs';
+
 import { FooterComponent } from './footer.component';
 
 describe('FooterComponent', () => {
@@ -15,8 +14,7 @@ describe('FooterComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [FooterComponent],
-            imports: [RouterTestingModule.withRoutes([])],
+            imports: [FooterComponent],
             providers: [{ provide: Router, useValue: mockRouter }],
         });
         fixture = TestBed.createComponent(FooterComponent);
@@ -38,11 +36,12 @@ describe('FooterComponent', () => {
         expect(companyName.textContent).toBe('Monotop Kft.');
 
         const contactInfos: NodeListOf<HTMLDivElement> = fixture.nativeElement.querySelectorAll('.company-data div');
-        expect(contactInfos.length).toBe(4);
+        expect(contactInfos.length).toBe(5);
         expect(contactInfos[0]?.textContent).toBe('1214 Budapest, II. Rákóczi Ferenc út 315.');
-        expect(contactInfos[1]?.textContent).toBe('+36 1 2000 380');
-        expect(contactInfos[2]?.textContent).toBe('info@monotop.hu');
-        expect(contactInfos[3]?.textContent).toBe('Adószám: 12134524-1-66');
+        expect(contactInfos[1]?.textContent).toBe('+36 30 947 2080Rácz József');
+        expect(contactInfos[2]?.textContent).toBe('+36 30 203 9224Megyesi Zsolt');
+        expect(contactInfos[3]?.textContent).toBe('info@monotop.hu');
+        expect(contactInfos[4]?.textContent).toBe('Adószám: 13817215-2-43');
     });
 
     it('should display interactable phone number and email address', () => {
@@ -50,11 +49,13 @@ describe('FooterComponent', () => {
         fixture.detectChanges();
 
         const interactableInfos: NodeListOf<HTMLAnchorElement> = fixture.nativeElement.querySelectorAll('a');
-        expect(interactableInfos.length).toBe(2);
-        expect(interactableInfos[0]?.textContent).toBe('+36 1 2000 380');
-        expect(interactableInfos[0]?.href).toBe('tel:+36 1 2000 380');
-        expect(interactableInfos[1]?.textContent).toBe('info@monotop.hu');
-        expect(interactableInfos[1]?.href).toBe('mailto:info@monotop.hu');
+        expect(interactableInfos.length).toBe(3);
+        expect(interactableInfos[0]?.textContent).toBe('+36 30 947 2080');
+        expect(interactableInfos[0]?.href).toBe('tel:+36 30 947 2080');
+        expect(interactableInfos[1]?.textContent).toBe('+36 30 203 9224');
+        expect(interactableInfos[1]?.href).toBe('tel:+36 30 203 9224');
+        expect(interactableInfos[2]?.textContent).toBe('info@monotop.hu');
+        expect(interactableInfos[2]?.href).toContain('mailto:info@monotop.hu');
     });
 
     it('should display the map', () => {

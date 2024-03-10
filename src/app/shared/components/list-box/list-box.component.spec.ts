@@ -14,7 +14,7 @@ describe('ListBoxComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [ListBoxComponent],
+            imports: [ListBoxComponent],
         });
         fixture = TestBed.createComponent(ListBoxComponent);
         component = fixture.componentInstance;

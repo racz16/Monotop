@@ -7,25 +7,20 @@ section {
         color: $monotop-dark-blue;
         gap: 8px;
 
-        div {
+        .person-title {
+            font-weight: 600;
+        }
+
+        span {
             font-size: 16px;
         }
-    }
-
-    .people-title {
-        color: $monotop-green;
-        font-size: 24px;
     }
 
     .people-text {
         color: $monotop-dark-blue;
         gap: 8px;
 
-        .person-title {
-            font-weight: 600;
-        }
-
-        span {
+        div {
             font-size: 16px;
         }
     }

@@ -7,7 +7,9 @@
     >
         Ugrás a tartalomhoz
     </a>
-    <span *ngIf="!environment.production" class="position-absolute text-white ms-3"> DEV </span>
+    @if (!environment.production) {
+        <span class="position-absolute text-white ms-3"> DEV </span>
+    }
     <div class="container container-big d-flex align-items-center">
         <a class="d-flex align-items-center text-decoration-none" routerLink="">
             <img src="assets/logos/logo.svg" width="48" height="36" alt="Monotop Kft. logó" />
@@ -24,19 +26,21 @@
         </button>
         <nav [ngbCollapse]="isMenuCollapsed" id="navigation" class="collapse navbar-collapse">
             <ul class="d-flex justify-content-end flex-column flex-lg-row w-100 p-0 m-0">
-                <li *ngFor="let menuItem of menuItems">
-                    <a
-                        class="text-decoration-none"
-                        [routerLink]="menuItem.path"
-                        routerLinkActive="active-menu-item"
-                        [ariaCurrent]="(rs.currentUrl$ | async) === '/' + menuItem.path ? 'page' : null"
-                        [routerLinkActiveOptions]="{ exact: true }"
-                        [class.disabled]="menuItem.path === undefined"
-                        (click)="isMenuCollapsed = true"
-                    >
-                        {{ menuItem.name }}
-                    </a>
-                </li>
+                @for (menuItem of menuItems; track menuItem.name) {
+                    <li>
+                        <a
+                            class="text-decoration-none"
+                            [routerLink]="menuItem.path"
+                            routerLinkActive="active-menu-item"
+                            [ariaCurrent]="(rs.currentUrl$ | async) === '/' + menuItem.path ? 'page' : null"
+                            [routerLinkActiveOptions]="{ exact: true }"
+                            [class.disabled]="menuItem.path === undefined"
+                            (click)="isMenuCollapsed = true"
+                        >
+                            {{ menuItem.name }}
+                        </a>
+                    </li>
+                }
             </ul>
         </nav>
     </div>

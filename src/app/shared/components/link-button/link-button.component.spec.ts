@@ -1,11 +1,13 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Component } from '@angular/core';
-import { RouterTestingModule } from '@angular/router/testing';
+import { provideRouter } from '@angular/router';
 import { LinkButtonComponent } from './link-button.component';
 
 @Component({
     template: '<app-link-button>Test text content</app-link-button>',
+    standalone: true,
+    imports: [LinkButtonComponent],
 })
 class TestHostComponent {}
 
@@ -15,8 +17,8 @@ describe('LinkButtonComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [LinkButtonComponent, TestHostComponent],
-            imports: [RouterTestingModule],
+            imports: [LinkButtonComponent, TestHostComponent],
+            providers: [provideRouter([])],
         });
         fixture = TestBed.createComponent(LinkButtonComponent);
         component = fixture.componentInstance;

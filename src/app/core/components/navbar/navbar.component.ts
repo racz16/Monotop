@@ -1,4 +1,7 @@
+import { AsyncPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { NgbCollapse } from '@ng-bootstrap/ng-bootstrap';
 import { environment } from 'src/environments/environment';
 import { MenuItem } from '../../interfaces/menu-item';
 import { RoutingService } from '../../services/routing.service';
@@ -8,6 +11,8 @@ import { RoutingService } from '../../services/routing.service';
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [RouterLink, NgbCollapse, RouterLinkActive, AsyncPipe],
 })
 export class NavbarComponent {
     environment = environment;

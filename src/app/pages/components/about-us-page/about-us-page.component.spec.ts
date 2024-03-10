@@ -1,8 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { By } from '@angular/platform-browser';
-import { RouterTestingModule } from '@angular/router/testing';
-import { SharedModule } from 'src/app/shared/shared.module';
+
+import { provideRouter } from '@angular/router';
+import { LinkButtonComponent } from 'src/app/shared/components/link-button/link-button.component';
+import { WorkTogetherComponent } from 'src/app/shared/components/work-together/work-together.component';
 import { AboutUsPageComponent } from './about-us-page.component';
 
 describe('AboutUsPageComponent', () => {
@@ -11,8 +12,8 @@ describe('AboutUsPageComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [AboutUsPageComponent],
-            imports: [RouterTestingModule, SharedModule],
+            imports: [LinkButtonComponent, WorkTogetherComponent, AboutUsPageComponent],
+            providers: [provideRouter([])],
         });
         fixture = TestBed.createComponent(AboutUsPageComponent);
         component = fixture.componentInstance;
@@ -51,10 +52,10 @@ describe('AboutUsPageComponent', () => {
         expect(aboutUs).toBeTruthy();
         expect(aboutUs.length).toBe(2);
         expect(aboutUs[0]?.textContent).toContain(
-            'A Monotop Iparipadló Építő és Műszaki Fejlesztő Kft. 1995-ben alakult, magyar tulajdonú építőipari vállalkozás. A cég 30 fős saját létszámmal rendelkezik és megalakulása óta végez speciális építőipari tevékenységet.'
+            'A Monotop Iparipadló Építő és Műszaki Fejlesztő Kft. 1994-ben alakult, magyar tulajdonú építőipari vállalkozás. A cég 30 fős saját létszámmal rendelkezik és megalakulása óta végez betonpadlókhoz kapcsolódó speciális építőipari tevékenységet.'
         );
         expect(aboutUs[1]?.textContent).toContain(
-            'Évente 100.000 - 150.000 m² ipari padlót, térbetont, aljzatbetont, felbetont készítünk.'
+            'Évente 120.000 - 150.000 m² nagytáblás és vágott fugás ipari padlót, térbetont, aljzatbetont, felbetont készítünk.'
         );
         expect(referencesText).toBeTruthy();
         expect(referencesText.textContent).toContain(
@@ -87,7 +88,7 @@ describe('AboutUsPageComponent', () => {
         expect(listItems[1]?.textContent).toBe('vágott fugás ipari padlók');
         expect(listItems[2]?.textContent).toBe('térbetonok, beton útburkolatok');
         expect(listItems[3]?.textContent).toBe('felbetonok, alaplemezek, aljzatbetonok');
-        expect(listItems[4]?.textContent).toBe('felújítás, állagmegóvás, padlójavítások');
+        expect(listItems[4]?.textContent).toBe('padlójavítások, betonpadló felújítása');
     });
 
     it('should display a link', () => {
@@ -95,7 +96,7 @@ describe('AboutUsPageComponent', () => {
         expect(link).toBeTruthy();
         const linkComponent = link.componentInstance;
         expect(linkComponent).toBeTruthy();
-        expect(linkComponent.svgIcon).toBe('arrow-right');
+        expect(linkComponent.svgIcon).toBe('assets/link-button-icons/arrow-right.svg');
         expect(linkComponent.link).toBe('/tevekenysegek');
         expect(linkComponent.isExternal).toBe(false);
         expect(link.nativeElement).toBeTruthy();

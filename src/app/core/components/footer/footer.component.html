@@ -1,35 +1,50 @@
 <footer class="text-white">
-    <div *ngIf="(rs.isContactPageOpened$ | async) === false" class="footer-extended d-flex">
-        <address class="container container-small mt-120 mb-120">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="footer-monotop mb-48">Monotop Kft.</div>
-                    <div class="company-data">
-                        <div class="mb-16">1214 Budapest, II. Rákóczi Ferenc út 315.</div>
-                        <div class="mb-16">
-                            <a href="tel:+36 1 2000 380" class="text-decoration-none text-white">+36 1 2000 380</a>
+    @if ((rs.isContactPageOpened$ | async) === false) {
+        <div class="footer-extended d-flex">
+            <address class="container container-small mt-120 mb-120">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="footer-monotop mb-48">Monotop Kft.</div>
+                        <div class="company-data">
+                            <div class="mb-16">1214 Budapest, II. Rákóczi Ferenc út 315.</div>
+                            <div class="mb-16">
+                                <a href="tel:+36 30 947 2080" class="text-decoration-none text-white"
+                                    >+36 30 947 2080</a
+                                >
+                                <span class="ms-3">Rácz József</span>
+                            </div>
+                            <div class="mb-16">
+                                <a href="tel:+36 30 203 9224" class="text-decoration-none text-white"
+                                    >+36 30 203 9224</a
+                                >
+                                <span class="ms-3">Megyesi Zsolt</span>
+                            </div>
+                            <div class="mb-16">
+                                <a
+                                    href="mailto:info@monotop.hu?subject=Aj%C3%A1nlatk%C3%A9r%C3%A9s&body=K%C3%A9rj%C3%BCk%2C%20az%20al%C3%A1bbiak%20kit%C3%B6lt%C3%A9s%C3%A9vel%20seg%C3%ADtse%20munk%C3%A1nkat.%20Amennyiben%20lehets%C3%A9ges%2C%20alaprajzot%20%C3%A9s%20f%C3%A9nyk%C3%A9peket%20mell%C3%A9keljen.%0A%0ACsarnok%C3%A9p%C3%BClet%20rendeltet%C3%A9se%3A%20mez%C5%91gazdas%C3%A1gi%20%2F%20gy%C3%A1rt%C3%B3%20%2F%20rakt%C3%A1r%20%2F%20f%C3%B6d%C3%A9m%20%2F%20t%C3%A9rbeton%0ATeherb%C3%ADr%C3%A1s%3A%20kicsi%20%2F%20k%C3%B6zepes%20%2F%20nagy%0AIg%C3%A9nybev%C3%A9tel%3A%20kicsi%20%2F%20k%C3%B6zepes%20%2F%20nagy%0APadl%C3%B3fel%C3%BClet%20mennyis%C3%A9ge%3A%20"
+                                    class="text-decoration-none text-white"
+                                    >info&#64;monotop.hu</a
+                                >
+                            </div>
+                            <div>Adószám: 13817215-2-43</div>
                         </div>
-                        <div class="mb-16">
-                            <a href="mailto:info@monotop.hu" class="text-decoration-none text-white">info@monotop.hu</a>
-                        </div>
-                        <div>Adószám: 12134524-1-66</div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <iframe
+                            title="Térképen a cím: 1214 Budapest, II. Rákóczi Ferenc út 315."
+                            class="w-100 border-0"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Térképen a Monotop Kft. telephelye."
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCfvKDqo7CqaxBoHSiZpF7NqPNC8ozxd4w&q=place_id:ChIJEcO9lwrnQUcRhBz0r2aneRs&zoom=13"
+                        >
+                        </iframe>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <iframe
-                        title="Térképen a cím: 1214 Budapest, II. Rákóczi Ferenc út 315."
-                        class="w-100 border-0"
-                        loading="lazy"
-                        allowfullscreen
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Térképen a Monotop Kft. telephelye."
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCfvKDqo7CqaxBoHSiZpF7NqPNC8ozxd4w&q=place_id:ChIJEcO9lwrnQUcRhBz0r2aneRs"
-                    >
-                    </iframe>
-                </div>
-            </div>
-        </address>
-    </div>
+            </address>
+        </div>
+    }
     <div class="footer-basic d-flex">
         <div class="container container-small mt-32 mb-32">Monotop Kft. © Minden jog fenntartva</div>
     </div>

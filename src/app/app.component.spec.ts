@@ -1,14 +1,15 @@
 import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+
+import { provideRouter } from '@angular/router';
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
-import { PagesModule } from './pages/pages.module';
+import { FooterComponent } from './core/components/footer/footer.component';
+import { NavbarComponent } from './core/components/navbar/navbar.component';
 
 describe('AppComponent', () => {
     beforeEach(() =>
         TestBed.configureTestingModule({
-            imports: [RouterTestingModule, CoreModule, PagesModule],
-            declarations: [AppComponent],
+            imports: [NavbarComponent, FooterComponent, AppComponent],
+            providers: [provideRouter([])],
         })
     );
 

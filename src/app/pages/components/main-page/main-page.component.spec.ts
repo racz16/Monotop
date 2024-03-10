@@ -1,10 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { By } from '@angular/platform-browser';
-import { RouterTestingModule } from '@angular/router/testing';
+
+import { provideRouter } from '@angular/router';
 import { DotsComponent } from 'src/app/shared/components/dots/dots.component';
+import { LinkButtonComponent } from 'src/app/shared/components/link-button/link-button.component';
 import { WorkTogetherComponent } from 'src/app/shared/components/work-together/work-together.component';
-import { SharedModule } from 'src/app/shared/shared.module';
 import { MainPageComponent } from './main-page.component';
 
 describe('MainPageComponent', () => {
@@ -13,8 +13,8 @@ describe('MainPageComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [MainPageComponent],
-            imports: [SharedModule, RouterTestingModule],
+            imports: [LinkButtonComponent, DotsComponent, WorkTogetherComponent, MainPageComponent],
+            providers: [provideRouter([])],
         });
         jasmine.clock().install();
         jasmine.clock().mockDate(new Date('2025-05-12'));
@@ -46,7 +46,7 @@ describe('MainPageComponent', () => {
         expect(link).toBeTruthy();
         const linkComponent = link.componentInstance;
         expect(linkComponent).toBeTruthy();
-        expect(linkComponent.svgIcon).toBe('arrow-right');
+        expect(linkComponent.svgIcon).toBe('assets/link-button-icons/arrow-right.svg');
         expect(linkComponent.link).toBe('/tevekenysegek');
         expect(linkComponent.isExternal).toBe(false);
         expect(link.nativeElement).toBeTruthy();
@@ -93,14 +93,14 @@ describe('MainPageComponent', () => {
         expect(h1s).toBeTruthy();
         expect(h1s.length).toBe(2);
         expect(h1s[0]?.textContent).toBe('Ipari padlót készítünk');
-        expect(h1s[1]?.textContent).toBe('30 éve töretlenül');
+        expect(h1s[1]?.textContent).toBe('31 éve töretlenül');
         expect(awardTitle).toBeTruthy();
         expect(awardTitle.textContent).toBe('MONOTOP Kft.');
         expect(awardText).toBeTruthy();
         expect(awardText.textContent).toBe('Mesterdíjas kivitelező');
         expect(yearsText).toBeTruthy();
         expect(yearsText.textContent).toContain(
-            'Évente 100.000 - 150.000 m² monolit betonlemezt, ipari padlót, alaplemezt, felbetont készítünk el.'
+            'Évente 120.000 - 150.000 m² nagytáblás és vágottfugás ipari padlót, alaplemezt, felbetont készítünk.'
         );
         expect(greenCardTitle).toBeTruthy();
         expect(greenCardTitle.textContent).toContain('150.000 m²');

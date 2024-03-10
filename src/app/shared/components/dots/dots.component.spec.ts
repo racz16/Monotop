@@ -9,7 +9,7 @@ describe('DotsComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [DotsComponent],
+            imports: [DotsComponent],
         });
         fixture = TestBed.createComponent(DotsComponent);
         component = fixture.componentInstance;

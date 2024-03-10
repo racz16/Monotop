@@ -11,7 +11,7 @@ describe('WorkTogetherComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [WorkTogetherComponent, LinkButtonComponent, DotsComponent],
+            imports: [WorkTogetherComponent, LinkButtonComponent, DotsComponent],
         });
         fixture = TestBed.createComponent(WorkTogetherComponent);
         component = fixture.componentInstance;
@@ -38,8 +38,8 @@ describe('WorkTogetherComponent', () => {
         expect(link).toBeTruthy();
         const linkComponent = link.componentInstance;
         expect(linkComponent).toBeTruthy();
-        expect(linkComponent.svgIcon).toBe('envelope');
-        expect(linkComponent.link).toBe('mailto:info@monotop.hu');
+        expect(linkComponent.svgIcon).toBe('assets/link-button-icons/envelope.svg');
+        expect(linkComponent.link).toContain('mailto:info@monotop.hu');
         expect(linkComponent.isExternal).toBe(true);
         expect(link.nativeElement).toBeTruthy();
         expect(link.nativeElement.textContent).toContain('Ajánlatot kérek');
