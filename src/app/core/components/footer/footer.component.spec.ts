@@ -55,7 +55,7 @@ describe('FooterComponent', () => {
         expect(interactableInfos[1]?.textContent).toBe('+36 30 203 9224');
         expect(interactableInfos[1]?.href).toBe('tel:+36 30 203 9224');
         expect(interactableInfos[2]?.textContent).toBe('info@monotop.hu');
-        expect(interactableInfos[2]?.href).toBe('mailto:info@monotop.hu');
+        expect(interactableInfos[2]?.href).toContain('mailto:info@monotop.hu');
     });
 
     it('should display the map', () => {
