@@ -1,9 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 
+import { provideRouter } from '@angular/router';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
-import { provideRouter } from '@angular/router';
 
 describe('AppComponent', () => {
     beforeEach(() =>

@@ -1,11 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
+import { provideRouter } from '@angular/router';
 import { DotsComponent } from 'src/app/shared/components/dots/dots.component';
+import { LinkButtonComponent } from 'src/app/shared/components/link-button/link-button.component';
 import { WorkTogetherComponent } from 'src/app/shared/components/work-together/work-together.component';
 import { MainPageComponent } from './main-page.component';
-import { LinkButtonComponent } from 'src/app/shared/components/link-button/link-button.component';
-import { provideRouter } from '@angular/router';
 
 describe('MainPageComponent', () => {
     let component: MainPageComponent;

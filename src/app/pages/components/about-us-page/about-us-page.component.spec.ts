@@ -1,10 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { AboutUsPageComponent } from './about-us-page.component';
+import { provideRouter } from '@angular/router';
 import { LinkButtonComponent } from 'src/app/shared/components/link-button/link-button.component';
 import { WorkTogetherComponent } from 'src/app/shared/components/work-together/work-together.component';
-import { provideRouter } from '@angular/router';
+import { AboutUsPageComponent } from './about-us-page.component';
 
 describe('AboutUsPageComponent', () => {
     let component: AboutUsPageComponent;

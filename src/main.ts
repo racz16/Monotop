@@ -1,10 +1,10 @@
 /// <reference types="@angular/localize" />
 
-import { AppComponent } from './app/app.component';
 import { isDevMode } from '@angular/core';
-import { provideServiceWorker } from '@angular/service-worker';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
+import { provideServiceWorker } from '@angular/service-worker';
+import { AppComponent } from './app/app.component';
 import { AboutUsPageComponent } from './app/pages/components/about-us-page/about-us-page.component';
 import { ActivitiesPageComponent } from './app/pages/components/activities-page/activities-page.component';
 import { ContactPageComponent } from './app/pages/components/contact-page/contact-page.component';

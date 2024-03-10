@@ -2,8 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { By } from '@angular/platform-browser';
 import { ListBoxComponent } from 'src/app/shared/components/list-box/list-box.component';
-import { ActivitiesPageComponent } from './activities-page.component';
 import { WorkTogetherComponent } from 'src/app/shared/components/work-together/work-together.component';
+import { ActivitiesPageComponent } from './activities-page.component';
 
 describe('ActivitiesPageComponent', () => {
     let component: ActivitiesPageComponent;

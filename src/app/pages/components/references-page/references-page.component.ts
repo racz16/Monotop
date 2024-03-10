@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RoutingService } from 'src/app/core/services/routing.service';
-import { City } from '../../interfaces/city';
-import { WorkTogetherComponent } from '../../../shared/components/work-together/work-together.component';
 import { NgbTooltip } from '@ng-bootstrap/ng-bootstrap';
+import { RoutingService } from 'src/app/core/services/routing.service';
+import { WorkTogetherComponent } from '../../../shared/components/work-together/work-together.component';
+import { City } from '../../interfaces/city';
 
 @Component({
     selector: 'app-references-page',

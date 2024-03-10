@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RoutingService } from 'src/app/core/services/routing.service';
 import { Rectangle } from 'src/app/shared/interfaces/rectangle';
-import { WorkTogetherComponent } from '../../../shared/components/work-together/work-together.component';
 import { DotsComponent } from '../../../shared/components/dots/dots.component';
 import { LinkButtonComponent } from '../../../shared/components/link-button/link-button.component';
+import { WorkTogetherComponent } from '../../../shared/components/work-together/work-together.component';
 
 @Component({
     selector: 'app-main-page',

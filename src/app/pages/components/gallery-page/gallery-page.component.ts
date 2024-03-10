@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { NgbCarousel, NgbSlide } from '@ng-bootstrap/ng-bootstrap';
 import { RoutingService } from 'src/app/core/services/routing.service';
 import { WorkTogetherComponent } from '../../../shared/components/work-together/work-together.component';
-import { NgbCarousel, NgbSlide } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
     selector: 'app-gallery-page',

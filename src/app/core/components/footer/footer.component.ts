@@ -1,6 +1,6 @@
+import { AsyncPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RoutingService } from '../../services/routing.service';
-import { AsyncPipe } from '@angular/common';
 
 @Component({
     selector: 'app-footer',

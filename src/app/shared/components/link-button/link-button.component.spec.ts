@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Component } from '@angular/core';
-import { LinkButtonComponent } from './link-button.component';
 import { provideRouter } from '@angular/router';
+import { LinkButtonComponent } from './link-button.component';
 
 @Component({
     template: '<app-link-button>Test text content</app-link-button>',

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FooterComponent } from './core/components/footer/footer.component';
 import { RouterOutlet } from '@angular/router';
+import { FooterComponent } from './core/components/footer/footer.component';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
 
 @Component({
