@@ -15,6 +15,7 @@
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
         "test-headless": "ng test --no-watch --no-progress --browsers=ChromeHeadless",
+        "test-coverage": "ng test --no-watch --code-coverage",
         "stylelint": "stylelint **/*.scss",
         "prettier-lint": "prettier --check .",
         "prettier-format": "prettier --write .",
