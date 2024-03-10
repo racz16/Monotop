@@ -1,6 +1,6 @@
 # Monotop
 
-[Deployed website](https://monotop.hu/)
+[Deployed website](https://racz16.github.io/Monotop/)
 
 ## Technologies
 
