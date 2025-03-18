@@ -93,14 +93,14 @@ describe('MainPageComponent', () => {
         expect(h1s).toBeTruthy();
         expect(h1s.length).toBe(2);
         expect(h1s[0]?.textContent).toBe('Ipari padlót készítünk');
-        expect(h1s[1]?.textContent).toBe('31 éve töretlenül');
+        expect(h1s[1]?.textContent).toBe('30 éve töretlenül');
         expect(awardTitle).toBeTruthy();
         expect(awardTitle.textContent).toBe('MONOTOP Kft.');
         expect(awardText).toBeTruthy();
         expect(awardText.textContent).toBe('Mesterdíjas kivitelező');
         expect(yearsText).toBeTruthy();
         expect(yearsText.textContent).toContain(
-            'Évente 120.000 - 150.000 m² nagytáblás és vágottfugás ipari padlót, alaplemezt, felbetont készítünk.'
+            'Évente 100.000 - 150.000 m² nagytáblás és vágottfugás ipari padlót, alaplemezt, felbetont készítünk.'
         );
         expect(greenCardTitle).toBeTruthy();
         expect(greenCardTitle.textContent).toContain('150.000 m²');
