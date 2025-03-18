@@ -52,14 +52,14 @@ describe('AboutUsPageComponent', () => {
         expect(aboutUs).toBeTruthy();
         expect(aboutUs.length).toBe(2);
         expect(aboutUs[0]?.textContent).toContain(
-            'A Monotop Iparipadló Építő és Műszaki Fejlesztő Kft. 1994-ben alakult, magyar tulajdonú építőipari vállalkozás. A cég 30 fős saját létszámmal rendelkezik és megalakulása óta végez betonpadlókhoz kapcsolódó speciális építőipari tevékenységet.'
+            'A Monotop Iparipadló Építő és Műszaki Fejlesztő Kft. 1995-ben alakult, magyar tulajdonú építőipari vállalkozás. A cég 30 fős saját létszámmal rendelkezik és megalakulása óta végez speciális építőipari tevékenységet.'
         );
         expect(aboutUs[1]?.textContent).toContain(
-            'Évente 120.000 - 150.000 m² nagytáblás és vágott fugás ipari padlót, térbetont, aljzatbetont, felbetont készítünk.'
+            'Évente 100.000 - 150.000 m² ipari padlót, térbetont, aljzatbetont, felbetont készítünk.'
         );
         expect(referencesText).toBeTruthy();
         expect(referencesText.textContent).toContain(
-            'Számos országosan is elismert generálkivitelezőt tudhatunk megrendelőink között. Elvégzett munkáink között szerepelnek az alábbi cégek beruházásai a teljesség igénye nélkül:'
+            'Partnereink között számos országosan elismert generálkivitelező szerepel. Portfóliónkban néhány példát kiemelve az alábbi vállalatok beruházási is megtalálhatók:'
         );
         expect(references.length).toBe(18);
         expect(references[0]?.textContent).toBe('Aréna Pláza');
@@ -83,12 +83,15 @@ describe('AboutUsPageComponent', () => {
         expect(listTitle).toBeTruthy();
         expect(listTitle.textContent).toBe('Cégünk fő tevékenységei:');
         expect(listItems).toBeTruthy();
-        expect(listItems.length).toBe(5);
+        expect(listItems.length).toBe(6);
         expect(listItems[0]?.textContent).toBe('szálerősített nagytáblás, vágott fuga mentes ipari padlók');
         expect(listItems[1]?.textContent).toBe('vágott fugás ipari padlók');
         expect(listItems[2]?.textContent).toBe('térbetonok, beton útburkolatok');
         expect(listItems[3]?.textContent).toBe('felbetonok, alaplemezek, aljzatbetonok');
-        expect(listItems[4]?.textContent).toBe('padlójavítások, betonpadló felújítása');
+        expect(listItems[4]?.textContent).toBe(
+            'RINOL DRT nedves csiszolási technológia betonpadló felületek erősítésére'
+        );
+        expect(listItems[5]?.textContent).toBe('padlójavítások, felújítás, állagmegóvás');
     });
 
     it('should display a link', () => {
