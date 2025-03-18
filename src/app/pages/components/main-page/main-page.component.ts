@@ -15,7 +15,7 @@ import { WorkTogetherComponent } from '../../../shared/components/work-together/
 })
 export class MainPageComponent {
     rectangle: Rectangle[] = [{ x: 0, y: 0, width: 12, height: 6 }];
-    yearsSinceFoundation = (new Date().getFullYear() - 1994).toString();
+    yearsSinceFoundation = (new Date().getFullYear() - 1995).toString();
 
     constructor(rs: RoutingService) {
         rs.setPageTitle('Főoldal');
